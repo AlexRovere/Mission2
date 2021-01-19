@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mainActualites.css">
+    <link rel="stylesheet" href="main.css">
     <title>Document</title>
 </head>
 <body>
@@ -11,7 +10,7 @@
 <?php include('menuSecondaire.php') ?>
 
     <h2 id="titrePageActualites" >L’actualité d’Active Bretagne Informatique</h2>
-    <hr id="hrIndex">
+    <hr class="hrIndex"> 
 
     <div class="blocImgActualites">
 

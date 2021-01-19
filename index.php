@@ -3,12 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="quiSommesNous.css">
     <title>Mision 2</title>
 </head>
 <body>
 
- <?php include('header.php') ?>
+<header>
+        <div class="headerGauche">
+            <a href="index.php"><img src="img/logo.jpg" id="logo" alt="logo"></a>
+            <div id="ACI">
+               <p class="active">active<br></p>
+               <p class="bretagne">bretagne<br></p>
+               <p class="informatique">informatique<br></p>
+            </div>
+        </div>
+        <a id="connexion" href="https://pointerpointer.com/">
+            <img  id="account" src="img/account.png" alt="" height="35px">
+            <p class="connexion">CONNEXION</p>
+        </a>
+ </header>
 
     
 

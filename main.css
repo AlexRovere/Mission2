@@ -12,8 +12,7 @@
             url('fonts/ttf/BebasNeue-Regular.ttf');
 }
 
-*
-{
+* {
     font-family: chivo, "Arial", Helvetica, sans-serif;
     box-sizing: border-box;
     margin : 0;
@@ -26,14 +25,12 @@ body {
     max-height: 2000px;
 }
 
-#blocPage
-{
+#blocPage {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-h1
-{
+h1 {
     text-align: center;
     color: #064654;
     font-family: BebasNeue, "impact", Arial, Helvetica, sans-serif;
@@ -111,36 +108,34 @@ header {
 
 /* NAV */
 
-#blocNavImg
-{
+#blocNavImg {
     display: flex;
     justify-content: space-between;
     margin-left: 10%;
     margin-right: 10%;
 }
 
-#imgQuiSommesNous
-{
+#imgQuiSommesNous {
   background-image: url("img/img_quiSommesNous.jpg");  
   height: 309px;
   width: 446.51px;
 }
 
-#imgContact{
+#imgContact {
     background-image: url("img/img_contact.png"); 
     height: 309px;
     width: 310px;
 }
 
 
-#imgActualités{
+#imgActualités {
     background-image: url("img/img_actualites.png"); 
     height: 309px;
     width: 511px;
    
 }
 
-.navTexte{
+.navTexte {
     color:white;
     font-size: 3em;
     text-shadow: black 0px 10px 4px; 
@@ -150,7 +145,7 @@ header {
     font-family:  BebasNeue, "impact", Arial, Helvetica, sans-serif;
 }
 
-/* Page accueil contenu */
+/* PAGE ACCUEIL */
 
 .barreAccueil {
     align-items :  center;
@@ -201,7 +196,7 @@ header {
     text-align: left;
 }
 
-address a{
+address a {
     color: #096A80;
     font-style: normal;
     text-decoration: none;
@@ -219,13 +214,11 @@ address a{
 
 /* FOOTER */
 
-footer
-{
+footer {
 background-color: #096A80;
 }
 
-#footerListe
-{
+#footerListe {
     color : #F8FEFF;
     display: flex; 
     justify-content: space-around ;
@@ -235,14 +228,12 @@ background-color: #096A80;
     font-size: large;
 }
 
-#footerListe a
-{
+#footerListe a {
     text-decoration: none;
     color : #F8FEFF;
 }
 
-#footerListe a:hover
-{
+#footerListe a:hover {
     color: #0FB2D6 ;
     text-decoration: underline;
     font-size: x-large;
@@ -250,12 +241,10 @@ background-color: #096A80;
 
 /* NAV secondaire */
 
-#navSecondaire
-{
+#navSecondaire {
     height: 100px;
 }
-#navListe
-{
+#navListe {
     color : #F8FEFF;
     display: flex; 
     justify-content: space-around ;
@@ -265,21 +254,18 @@ background-color: #096A80;
     height: 100px;
 }
 
-#navListe a
-{
+#navListe a {
     text-decoration: none;
     color : #064654;
 }
 
-#navListe a:hover
-{
+#navListe a:hover {
     color: #0FB2D6 ;
     text-decoration: underline overline;
     font-size: xx-large;
 }
 
-#miette
-{
+#miette {
     font-size: 1.5em;
     color: #096A80;
     text-align: left;
@@ -293,12 +279,10 @@ background-color: #096A80;
 }
 
 
-/* DIVERS */
 
+/* PAGE CONTACT */
 
-/* Page contact */
-
-#blocContact{
+#blocContact {
     width: 1000px;
     height: 850px;
     background-color: white;
@@ -309,7 +293,7 @@ background-color: #096A80;
     margin-bottom: 100px;
 }
 
-#formContact{
+#formContact {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -317,7 +301,7 @@ background-color: #096A80;
     padding-top: 30px;
 }
 
-.formInput{
+.formInput {
     width: 100%;
     height: 40%;
     background-color: #E2F4F9;
@@ -326,7 +310,7 @@ background-color: #096A80;
     border:none;
 }
 
-#formTextArea{
+#formTextArea {
     width: 100%;
     height: 200px;
     background-color: #E2F4F9;
@@ -336,7 +320,7 @@ background-color: #096A80;
 
 }
 
-.pContact{
+.pContact {
     width: 70%;
     height: 150px;
     line-height: 50px;
@@ -345,7 +329,7 @@ background-color: #096A80;
     font-weight: bold;
 }
 
-#formBouton{
+#formBouton {
     background-color: #E2F4F9;
     border-radius: 20px;
     height: 50px;
@@ -354,4 +338,107 @@ background-color: #096A80;
     font-size: 0.7em;
     margin-left: 40%;
     margin-top: 20px;
+}
+
+/* PAGE ACTUALITES */
+
+#titrePageActualites {
+    color : #064654;
+    text-align: center;
+    vertical-align: 0px;
+    margin-bottom: -40px;
+}
+
+.blocImgActualites {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.blocImgActualites h3 {
+    font-size: 120%;
+    padding-top: 3%;
+}
+
+.blocArticleActualites {
+    padding-top: 1%;
+    padding-bottom: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid black;
+    height: 550px;
+}
+
+.paragrapheActualites {
+    width: 333px;
+    padding-top: 10%;
+}
+
+.enSavoirPlus {
+    font-size: 100%;
+    margin-top: 10%;
+    background-color: #E2F4F9;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px #064654;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #064654;
+}
+
+#loadMore {
+    background-color: #f2f9fb;
+    text-align: center;
+    margin-bottom: 4%;
+    margin-right: 40%;
+    margin-left: 40%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+#textLoadMore {
+    font-weight: bold;
+}
+
+/* PAGE QUISOMMENOUS */
+
+.h2Centre {
+    text-align: center;
+}
+
+#histoire {
+    font-size: medium;
+    line-height: 30px;
+    text-align: justify;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #E2F4F9;
+    width: 85%;
+    margin-bottom: 10%;
+    border-radius: 20px 0px 0px 20px;
+    height: 25%;
+}
+
+td {
+    padding: 10px;
+    vertical-align: center;
+}
+
+.direction {
+    color: #096A80;
+    padding-left: 25px;
+}
+
+.developpements {
+    color: #064654;
 }
