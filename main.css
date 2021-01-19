@@ -174,8 +174,9 @@ header {
     text-align: justify;
 }
 
-#hrIndex {
-    margin-top: 30px;
+.hrIndex {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #situation {

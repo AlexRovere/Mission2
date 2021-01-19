@@ -33,7 +33,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vero voluptatem ipsum vitae nihil. Quidem aut eius ex iste quas atque expedita eos commodi soluta, in voluptate velit impedit sapiente!
         </p>
     </section>
-    <hr id="hrIndex">
+    <hr class="hrIndex">
     <section>
         <h2>Où nous trouver ?</h2>
         <div id="situation">
