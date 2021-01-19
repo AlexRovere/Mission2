@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="quiSommesNous.css">
     <title>Mision 2</title>
 </head>
 <body>
