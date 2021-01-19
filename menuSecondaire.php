@@ -1,8 +1,8 @@
 <nav id="navSecondaire">
     <ul id="navListe">
-        <li><a href="quiSommesNous">Qui sommes nous ?</a></li>
-        <li><a href="actualites">Actualités</a></li>
-        <li><a href="contact">Contactez-nous</a></li>
+        <li><a href="quiSommesNous.php">Qui sommes nous ?</a></li>
+        <li><a href="actualites.php">Actualités</a></li>
+        <li><a href="contact.php">Contactez-nous</a></li>
     </ul>
 </nav>
 

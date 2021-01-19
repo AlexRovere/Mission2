@@ -1,6 +1,6 @@
 <header>
         <div class="headerGauche">
-            <a href="index.html"><img src="img/logo.jpg" id="logo" alt="logo"></a>
+            <a href="index.php"><img src="img/logo.jpg" id="logo" alt="logo"></a>
             <div id="ACI">
                <p class="active">active<br></p>
                <p class="bretagne">bretagne<br></p>

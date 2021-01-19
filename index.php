@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="quiSommesNous.css">
     <title>Mision 2</title>
 </head>
 <body>
@@ -15,9 +16,9 @@
         <h1>ESN SPÉCIALISÉ DANS L'AGRO-ALIMENTAIRE</h1>
 
     <div id="blocNavImg">
-        <p id="imgQuiSommesNous" class="navTexte">QUI SOMMES NOUS ?</p>
-        <p id="imgContact" class="navTexte">CONTACT</p>
-        <p id="imgActualités" class="navTexte">ACTUALITÉS</p>
+        <a href="quiSommesNous.php"><p id="imgQuiSommesNous" class="navTexte">QUI SOMMES NOUS ?</p></a>
+        <a href="contact.php"><p id="imgContact" class="navTexte">CONTACT</p></a>
+        <a href="actualites.php"><p id="imgActualités" class="navTexte">ACTUALITÉS</p></a>
     </div>
     </nav>
 
@@ -33,7 +34,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum vero voluptatem ipsum vitae nihil. Quidem aut eius ex iste quas atque expedita eos commodi soluta, in voluptate velit impedit sapiente!
         </p>
     </section>
-    <hr id="hrIndex">
+    <hr class="hrIndex">
     <section>
         <h2>Où nous trouver ?</h2>
         <div id="situation">
