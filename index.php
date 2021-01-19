@@ -15,9 +15,9 @@
         <h1>ESN SPÉCIALISÉ DANS L'AGRO-ALIMENTAIRE</h1>
 
     <div id="blocNavImg">
-        <p id="imgQuiSommesNous" class="navTexte">QUI SOMMES NOUS ?</p>
-        <p id="imgContact" class="navTexte">CONTACT</p>
-        <p id="imgActualités" class="navTexte">ACTUALITÉS</p>
+        <a href="quiSommesNous.php"><p id="imgQuiSommesNous" class="navTexte">QUI SOMMES NOUS ?</p></a>
+        <a href="contact.php"><p id="imgContact" class="navTexte">CONTACT</p></a>
+        <a href="actualites.php"><p id="imgActualités" class="navTexte">ACTUALITÉS</p></a>
     </div>
     </nav>
 
