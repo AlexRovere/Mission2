@@ -22,11 +22,11 @@
                 Vous etes connecté en tant que : Responsable Commercial</p>
             </div>
             <div class="boutons">
-                <div class="Intranet">
-                    <a href=""><p class="intranet">Intranet</p></a>
+                <div class="headerButton">
+                    <a href=""><p class="HeaderTextButton">Intranet</p></a>
                 </div>
-                <div class="Deconnexion">
-                    <a href=""><p class="deconnexion">Deconnexion</p></a>
+                <div class="headerButton">
+                    <a href=""><p class="HeaderTextButton">Deconnexion</p></a>
                 </div>
             </div>
         </div>

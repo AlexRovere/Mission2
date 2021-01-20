@@ -11,6 +11,8 @@
 
     <?php include('menuSecondaire.php') ?>
 
+    <p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Contact</p>
+
     <h2>Besoin d'un devis personnalisé ? Une suggestion ? Contactez-nous !</h2>
 
     <section id="blocContact">
