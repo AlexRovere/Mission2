@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
-    <title>MisSion 2</title>
-</head>
-<body>
-
     <header>
         <div class="headerGauche">
             <a href=""><img src="img/logo.jpg" id="logo" alt="1" height="120px"></a>
@@ -31,5 +22,9 @@
             </div>
         </div>
     </header>
+<<<<<<< Updated upstream
 </body>
 </html>
+=======
+    <div id="blocPage">
+>>>>>>> Stashed changes

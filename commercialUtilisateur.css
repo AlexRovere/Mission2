@@ -1,0 +1,70 @@
+
+
+/*commercialutilisateur*/
+
+.searchForm {
+    display: flex;
+   justify-content: center;
+   width: 100%;
+   height: 40px;
+   margin-bottom: 5%;
+}
+.searchInput {
+    width: 50%;
+    height:100%;
+    background-color: #096A80;
+    color: #E2F4F9;
+}
+
+input::placeholder {
+    color: #E2F4F9;
+}
+
+.container {
+    display:flex;
+    min-height: 600px;
+    margin-bottom: 5%;
+    justify-content: space-around;
+
+}
+
+.sideBar {
+    width: 22%;  
+}
+
+.function {
+    list-style: none;
+}
+
+.function a {
+    text-decoration: none;
+    color : #096A80;
+}
+
+.function a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    
+}
+
+.function li {
+    line-height: 4;
+}
+
+.interface {
+    background-color: rgba(226, 244, 249, 0.25);
+    width: 76%;
+}
+
+.function a {
+    text-decoration: none;
+    color : #096A80;
+    font-size: large;
+}
+
+.function a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: x-large;
+    
+}
