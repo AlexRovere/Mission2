@@ -1,0 +1,41 @@
+.modal-component {
+    position: fixed;
+}
+.form {
+    display:flex;
+    flex-direction:column;
+}
+
+.modal-backdrop {
+    position:absolute;
+}
+.mail {
+    font-family: Chivo;
+    font-size: 20px;
+    line-height: 24px;
+    color: #096A80;
+    
+}
+.motDePasse {
+    font-family: Chivo;
+    font-size: 20px;
+    line-height: 24px;
+    color: #096A80;
+}
+input {
+    border-radius:25px 0px 0px 25px;
+    width:450px;
+    height: 50px;
+    background-color: #E2F4F9;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+    border:none;
+}
+.connexion2 {
+
+}
+.bouton {
+    height:50px;
+    width:135px;
+    background-color:#064654;
+
+}
