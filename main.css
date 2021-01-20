@@ -106,6 +106,72 @@ header {
     padding: 0px;
 }
 
+/*HEADERCONNECTE*/
+
+.headerDroit {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -25px;
+}
+.Intranet {
+    width: 200px;
+    height: 50px;
+    left: 889px;
+    top: 82px;
+    background: #0C94B3;
+}
+.intranet {  
+    background: #0C94B3;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 0px;
+    color: #E2F4F9;
+    text-decoration:none;
+    text-align:center;
+    vertical-align: middle;
+}
+.Deconnexion {
+    width: 200px;
+    height: 50px;
+    left: 889px;
+    top: 82px;
+    background: #0C94B3;
+}
+.deconnexion {
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 0px;
+    color: #E2F4F9;
+    text-decoration:none;
+    text-align:center;
+    vertical-align:middle;
+}
+.identification {
+    width: 557px;
+    height: 48px;
+    left: 872px;
+    top: 15px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: normal;
+    margin-bottom: -25px;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    color: #E2F4F9;
+}
+.boutons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -20px;
+}
+
+
 /* NAV */
 
 #blocNavImg {

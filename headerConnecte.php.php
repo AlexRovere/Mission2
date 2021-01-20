@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="CSS HEADER+CHAMPS DE CONNEXION.css">
+    <link rel="stylesheet" href="main.css">
     <title>MisSion 2</title>
 </head>
 <body>
