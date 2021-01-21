@@ -22,7 +22,7 @@
 
 <section>
     <h2 class="h2Centre">Notre équipe</h2>
-    <table>
+    <table class="equipe">
         <tr>
             <td class="direction">Direction: </td>
             <td class="developpements">Département Développements: </td>
