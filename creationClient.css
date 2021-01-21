@@ -2,12 +2,56 @@
     background-color: #E2F4F9;
     width: 76%;
 }
+
 #formCreationClient {
-    display: flex;
-    flex-direction: column;
+    height: 100%;
 }
 
 #bloc1Creationclient {
     display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+#bloc2Creationclient {
+    display:flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#bloc3CreationClient {
+    display:flex;
+    flex-direction: column;
+    width: 95%;
+    
+}
+
+.pFormCreationClient {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    align-items: center;
+}
+
+.pFormCreationClientBloc3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.formInputCreationClientBloc1 {
+    width: 50%;   
+    margin-right: 20%;
+}
+
+.formInputCreationClientBloc2 {
+    width: 50%;   
+    margin-right: 10%;
+}
+
+.formInputCreationClientBloc3 {
+    width: 50%;   
+
 }
 
