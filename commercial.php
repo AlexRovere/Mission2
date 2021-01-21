@@ -13,7 +13,8 @@
 <div class="miette"><a href="index.html"><img src="img/home.png" id="logoMiette"></a>  /Gestion Commerciale</div>
 <h2 class="h2Centre">GESTION COMMERCIALE</h2>
 <form class="searchForm">
-    <input class="searchInput" type="search" value="" placeholder= "&#128269; Rechercher un client...">
+    <input class="searchInput" type="search" value="" placeholder= "Rechercher un client...">
+    <button class="searchButton"><img src="img/search.svg" alt=""></button>
 </form>
 <div class="container">
     <aside class="sideBar">
@@ -29,7 +30,7 @@
                     <th>ID</th>
                     <th>RAISON SOCIALE</th>
                     <th>TELEPHONE</th>
-                    <th><button class="tri">TRI</button></th>
+                    <th><button class="triButton">TRI</button></th>
                 </tr>
             </thead>
         </table>
