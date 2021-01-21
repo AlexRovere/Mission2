@@ -36,19 +36,19 @@
     <div class="blocImgActualitesIntranet">
         
         <div class="blocArticleActualitesIntranet">
-            <img src="img/imgActualites1.png" alt="">
+            <img src="img/imgAccueilIntranet1.png" alt="">
             <h3>Info COVID-19</h3>
             <button class="enSavoirPlus">En savoir +</button>
          </div>
 
         <div class="blocArticleActualitesIntranet">
-            <img src="img/imgActualites2.png" alt="">
+            <img src="img/imgAccueilIntranet2.png" alt="">
             <h3>Documentations d’ABI France</h3>
             <button class="enSavoirPlus">En savoir +</button>
         </div>
 
         <div class="blocArticleActualitesIntranet">
-            <img src="img/imgActualites3.png" alt="">
+            <img src="img/imgAccueilIntranet3.png" alt="">
             <h3>Vos Avantages C.E</h3>
             <button class="enSavoirPlus">En savoir +</button>
         </div>
