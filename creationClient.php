@@ -29,74 +29,83 @@
     </aside>
     <div class="interfaceCreationClient">
 
-    <form id="formCreationClient" method="post" action="">
+        <form id="formCreationClient" method="post" action="">
 
-    <div id="bloc1Creationclient">
+        
+            <div id="bloc1Creationclient">
 
-    <p class="pFormCreationClient">    
-        <label>Raison sociale</label> 
-        <input class="formInputCreationClient" type="text" name="raisonSociale">
-    </p>  
-    <p class="pFormCreationClient">    
-        <label>Téléphone</label> 
-        <input class="formInputCreationClient" type="text" name="telephone">
-    </p>  
-    <p class="pFormCreationClient">    
-        <label>Adresse</label>
-        <input class="formInputCreationClient" type="text" name="adresse">
-    </p>  
+                <p class="pFormCreationClient">    
+                    <label>Raison sociale</label> 
+                    <input class="formInputCreationClientBloc1" type="text" name="raisonSociale">
+                </p>  
+                <p class="pFormCreationClient">    
+                    <label>Téléphone</label> 
+                    <input class="formInputCreationClientBloc1" type="text" name="telephone">
+                </p>  
+                <p class="pFormCreationClient">    
+                    <label>Adresse</label>
+                    <input class="formInputCreationClientBloc1" type="text" name="adresse">
+                </p>  
 
-    </div>
+            </div>
 
-    <div id="bloc2Creationclient">
+            <div id="bloc2Creationclient">
 
-    <p class="pFormCreationClient">    
-        <label>Type</label>
-        <input class="formInputCreationClient" type="text" name="type">
-    </p>  
-    <p class="pFormCreationClient">    
-        <label>Nature</label>
-        <input class="formInputCreationClient" type="text" name="nature">
-    </p>  
-    <p class="pFormCreationClient">    
-        <label>Domaine</label>
-        <input class="formInputCreationClient" type="text" name="domaine">
-    </p>  
-    <p class="pFormCreationClient">    
-        <label>Effectifs</label>
-        <input class="formInputCreationClient" type="text" name="effectifs">
-    </p>  
-    <p class="pFormCreationClient">    
-        <label>Chiffres d'affaires</label>
-        <input class="formInputCreationClient" type="text" name="chiffreAffaires">
-    </p> 
+                <p class="pFormCreationClient">    
+                    <label>Type</label>
+                    <input class="formInputCreationClientBloc2" type="text" name="type">
+                </p>  
+                <p class="pFormCreationClient">    
+                    <label>Nature</label>
+                    <input class="formInputCreationClientBloc2" type="text" name="nature">
+                </p>  
+                <p class="pFormCreationClient">    
+                    <label>Domaine</label>
+                    <input class="formInputCreationClientBloc2" type="text" name="domaine">
+                </p>  
+                <p class="pFormCreationClient">    
+                    <label>Effectifs</label>
+                    <input class="formInputCreationClientBloc2" type="text" name="effectifs">
+                </p>  
+                <p class="pFormCreationClient">    
+                    <label>Chiffres d'affaires</label>
+                    <input class="formInputCreationClientBloc2" type="text" name="chiffreAffaires">
+                </p> 
 
-    <div>
+            </div>
 
-    <div id="bloc3CreationClient">
+            <div id="bloc3CreationClient">
 
-    <p class="pFormCreationClient">    
-        <label>Contacts</label>
-        <input class="formInputCreationClient" type="text" name="contacts">
-    </p>  
-    <p class="pFormCreationClient">    
-        <label>Documents</label>
-        <input class="formInputCreationClient" type="text" name="documents">
-    </p>  
-    <p class="pFormCreationClient">    
-        <label>Commentaires</label>
-        <input class="formInputCreationClient" type="text" name="commentaires">
-    </p>  
-    
-    </div>
+                <p class="pFormCreationClientBloc3">
+                    <div>    
+                    <label>Contacts</label>
+                    </div>
+                    <input class="formInputCreationClientBloc3" type="text" name="contacts">
+                    <input class="headerButton" type="submit" value="Ajout Contact">
+                </p>  
+                <p class="pFormCreationClientBloc3">    
+                    <label>Documents</label>
+                    <input class="formInputCreationClientBloc3" type="text" name="documents">
+                    <input class="headerButton" type="submit" value="Ajout Document">
+                </p>  
+                <!-- <p class="pFormCreationClient">    
+                    <label>Commentaires</label>
+                    <input class="formInputCreationClientBloc3" type="text" name="commentaires">
+                </p>   -->
+            
+            </div>
 
-    </form>
+            <p class="pFormCreationClientBloc3">    
+                    <label>Commentaires</label>
+                    <input class="formInputCreationClientBloc3" type="text" name="commentaires">
+            </p>  
 
-
+        </form>
         
     </div>
 </div>
-<?php include('footer.php') ?>
+
+<?php include('footer.php')?>
     
 </body>
 </html>
