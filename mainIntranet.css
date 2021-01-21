@@ -1,0 +1,44 @@
+/* PAGE ACCUEIL INTRANET */
+
+#titreIntranet
+{
+    color : #064654;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#blocImgIntranet
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+.blocNavIntranet 
+{
+    background-color: #E2F4F9;
+    margin-right: 10%;
+    height: 300px;
+    width: 313px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px #064654;
+}
+
+.textNav
+{
+    color:#064654;
+    font-family:  BebasNeue, "impact", Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+
+#sousTitreIntranet
+{
+    color : #064654;
+    text-align: center;
+    margin-bottom: 40px;
+}
