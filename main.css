@@ -467,7 +467,7 @@ background-color: #096A80;
 }
 
 
-table {
+.equipe {
     margin-left: auto;
     margin-right: auto;
     background-color: #E2F4F9;
@@ -477,7 +477,7 @@ table {
     height: 25%;
 }
 
-td {
+.equipe td {
     padding: 10px;
     vertical-align: center;
 }
