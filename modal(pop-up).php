@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>modal</title>
     <link rel="stylesheet" href="css modal.css">
+    <link rel="stylesheet" href="../main.css">
 </head>
 <body>
-    <!--fond-->
     <div class="modalComponent hidden">
-        <div class="modalFond"></div>
-            <!--bloc-->
+        <div class="modalFond">
+        <!--modal-->
             <div class="modal">
-                <!--formulaire (x2) /contenu -->
+                <!--formulaire (x2) -->
                 <form method="post" >
                     <div class="form">
                         <div class="mail">
@@ -29,13 +29,13 @@
                         </div>
                     </div>
                 </form>
-                <!-- //formulaire -->
-                <div class="bouton">
+                <!-- /formulaire (x2) -->
+                <div class="boutonModal">
                     <a href="#" class="connexionTxt">Connexion</a>
                 </div>
-            <!--//bloc-->        
             </div>
-        
-    </div> 
+            <!--/modal-->
+        </div>
+    </div>
 </body>
 </html>
