@@ -33,6 +33,28 @@
 
     <h2 id="sousTitreIntranet">L’actualité de l’entreprise </h2>
 
+    <div class="blocImgActualitesIntranet">
+        
+        <div class="blocArticleActualitesIntranet">
+            <img src="img/imgActualites1.png" alt="">
+            <h3>Info COVID-19</h3>
+            <button class="enSavoirPlus">En savoir +</button>
+         </div>
+
+        <div class="blocArticleActualitesIntranet">
+            <img src="img/imgActualites2.png" alt="">
+            <h3>Documentations d’ABI France</h3>
+            <button class="enSavoirPlus">En savoir +</button>
+        </div>
+
+        <div class="blocArticleActualitesIntranet">
+            <img src="img/imgActualites3.png" alt="">
+            <h3>Vos Avantages C.E</h3>
+            <button class="enSavoirPlus">En savoir +</button>
+        </div>
+
+    </div>
+
 
     <?php include('footer.php') ?>
 </body>
