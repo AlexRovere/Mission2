@@ -1,12 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
-    <title>MisSion 2</title>
-</head>
-<body>
-
     <header>
         <div class="headerGauche">
             <a href=""><img src="img/logo.jpg" id="logo" alt="1" height="120px"></a>
@@ -22,14 +13,13 @@
                 Vous etes connecté en tant que : Responsable Commercial</p>
             </div>
             <div class="boutons">
-                <div class="Intranet">
-                    <a href=""><p class="intranet">Intranet</p></a>
+                <div class="headerButton">
+                    <a href=""><p class="HeaderTextButton">Intranet</p></a>
                 </div>
-                <div class="Deconnexion">
-                    <a href=""><p class="deconnexion">Deconnexion</p></a>
+                <div class="headerButton">
+                    <a href=""><p class="HeaderTextButton">Deconnexion</p></a>
                 </div>
             </div>
         </div>
     </header>
-</body>
-</html>
+    <div id="blocPage">

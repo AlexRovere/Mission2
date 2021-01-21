@@ -113,40 +113,18 @@ header {
     flex-direction: column;
     margin-bottom: -25px;
 }
-.Intranet {
+.headerButton {
     width: 200px;
     height: 50px;
-    left: 889px;
-    top: 82px;
     background: #0C94B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.intranet {  
-    background: #0C94B3;
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
+.HeaderTextButton {  
+    font-size: 1.5em;
     color: #E2F4F9;
     text-decoration:none;
-    text-align:center;
-    vertical-align: middle;
-}
-.Deconnexion {
-    width: 200px;
-    height: 50px;
-    left: 889px;
-    top: 82px;
-    background: #0C94B3;
-}
-.deconnexion {
-    font-family: Chivo;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
-    color: #E2F4F9;
-    text-decoration:none;
-    text-align:center;
-    vertical-align:middle;
 }
 .identification {
     width: 557px;
@@ -330,7 +308,7 @@ background-color: #096A80;
     font-size: xx-large;
 }
 
-#miette {
+.miette {
     font-size: 1.5em;
     color: #096A80;
     text-align: left;
@@ -341,6 +319,11 @@ background-color: #096A80;
 {
     position: relative;
     bottom: -2px;
+}
+
+.navSecondaireBox {
+    width: 33%;
+    text-align: center;
 }
 
 
@@ -484,7 +467,7 @@ background-color: #096A80;
 }
 
 
-table {
+.equipe {
     margin-left: auto;
     margin-right: auto;
     background-color: #E2F4F9;
@@ -494,7 +477,7 @@ table {
     height: 25%;
 }
 
-td {
+.equipe td {
     padding: 10px;
     vertical-align: center;
 }

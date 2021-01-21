@@ -9,6 +9,7 @@
 <body>
 <?php include('header.php') ?>
 <?php include('menuSecondaire.php') ?>
+<p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Qui sommes nous</p>
 <section>
     <h2 class="h2Centre">Notre histoire</h2>
     <p id="histoire">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum commodi repellat id sequi eveniet veritatis provident eos doloremque quos corrupti corporis beatae aspernatur rem mollitia, tempore esse sed veniam incidunt.
@@ -21,7 +22,7 @@
 
 <section>
     <h2 class="h2Centre">Notre équipe</h2>
-    <table>
+    <table class="equipe">
         <tr>
             <td class="direction">Direction: </td>
             <td class="developpements">Département Développements: </td>

@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Actualités</title>
 </head>
 <body>
 <?php include('header.php') ?>
 <?php include('menuSecondaire.php') ?>
+<p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Actualités</p>
 
     <h2 id="titrePageActualites" >L’actualité d’Active Bretagne Informatique</h2>
     <hr class="hrIndex"> 
