@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+    <title>Actualités</title>
 </head>
 <body>
 <?php include('header.php') ?>
