@@ -1,0 +1,13 @@
+.interfaceCreationClient {
+    background-color: #E2F4F9;
+    width: 76%;
+}
+#formCreationClient {
+    display: flex;
+    flex-direction: column;
+}
+
+#bloc1Creationclient {
+    display:flex;
+}
+
