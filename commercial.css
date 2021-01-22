@@ -16,6 +16,7 @@
     background-color: #096A80;
     color: #E2F4F9;
     margin-left: 23.5%;
+    cursor: pointer;
 }
 
 input::placeholder {
@@ -24,6 +25,7 @@ input::placeholder {
 
 .searchButton {
     background-color: #096A80;
+    cursor: pointer;
 }
 
 .container {
@@ -95,11 +97,43 @@ input::placeholder {
     background-color: #096A80;
     color: #E2F4F9;
     width: 100%;
-    letter-spacing: 0.3em ;
+    letter-spacing: 0.3em;
+    cursor: pointer;
 }
 
 /*liste client*/
 
 .tableauClient td {
     border: 1px solid;
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdownContent{
+    display: none;
+    position: absolute;
+    background-color: #E2F4F9;
+    list-style: none;
+    width: 100%;
+}
+
+.dropdownContent a{
+    text-decoration: none;
+    color:#096A80;   
+}    
+
+.dropdown:hover .dropdownContent {
+    display: block;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.dropdown:hover .dropdownContent a:hover {
+    text-decoration: underline;
+    font-weight: bold;   
 }
