@@ -121,7 +121,7 @@ header {
     justify-content: center;
     align-items: center;
 }
-.HeaderTextButton {  
+.headerTextButton {  
     font-size: 1.5em;
     color: #E2F4F9;
     text-decoration:none;
@@ -489,4 +489,103 @@ background-color: #096A80;
 
 .developpements {
     color: #064654;
+}
+
+
+/* PAGE CREATION CLIENT */
+
+.interfaceCreationClient {
+    background-color: #E2F4F9;
+    width: 76%;
+}
+
+#formCreationClient {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* BLOC 1 (Raison social, tel, adresse) */
+
+#bloc1Creationclient {
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.pFormCreationClient {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    align-items: center;
+}
+
+.formInputCreationClientBloc1 {
+    width: 50%;   
+    margin-right: 20%;
+}
+
+#containerCreationClientBlocTop {
+    display: flex;
+}
+
+/* BLOC 2 (Type, nature, etc..) */
+#bloc2Creationclient {
+    display:flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.formInputCreationClientBloc2 {
+    width: 50%;   
+}
+
+/* BLOC 3 (Contact, docments) */
+#bloc3CreationClient {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.pFormCreationClientBloc3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:5%;
+}
+
+.formInputCreationClientBloc3 {
+    width: 50%;   
+}
+
+#textAreaCreationClientCommentaires {
+    width: 50%; 
+    height: 100px;
+    resize: none;
+}
+
+.labelCreationClientBottom {
+    width: 10%;
+}
+
+#formCreationClientFakeButton {
+    width: 200px;
+    height: 50px;
+}
+
+.flexCreationClient {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    
+}
+
+.buttonCreationClient {
+    width: 200px;
+    height: 50px;
+    background: #0C94B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E2F4F9;
+    font-weight: bold;
 }
