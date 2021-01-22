@@ -38,7 +38,16 @@
                     <td>1</td>
                     <td>Il était un fruit</td>
                     <td>01.02.03.04.05</td>
-                    <td><button class="tableauClientButton actionButton">ACTION</button></td>
+                    <td class="dropdown">
+                        <button class="tableauClientButton actionButton">ACTION</button>
+                        <ul class="dropdownContent">
+                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="#">Liste contact</a></li>
+                            <li><a href="#">Liste documents</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
                     <td>2</td>
