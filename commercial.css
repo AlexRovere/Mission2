@@ -1,32 +1,35 @@
 
 
-/*commercial*/
+/*commercialutilisateur*/
 
 .searchForm {
     display: flex;
    justify-content: center;
    width: 100%;
-   height: 50px;
+   height: 40px;
    margin-bottom: 5%;
-   justify-content: left;
 }
 .searchInput {
     width: 50%;
     height:100%;
     background-color: #096A80;
     color: #E2F4F9;
+
     margin-left: 23.5%;
     cursor: pointer;
+
 }
 
 input::placeholder {
     color: #E2F4F9;
 }
 
+
 .searchButton {
     background-color: #096A80;
     cursor: pointer;
 }
+
 
 .container {
     display:flex;
@@ -84,7 +87,7 @@ input::placeholder {
 }
 
 
-.tableauClient th {
+.tableauClient th, td {
     vertical-align: middle;
     border: solid;
 }
@@ -92,6 +95,7 @@ input::placeholder {
 .titreTableauClient {
     font-size: large;
 }
+
 
 .tableauClientButton {
     background-color: #096A80;
@@ -137,3 +141,5 @@ input::placeholder {
     text-decoration: underline;
     font-weight: bold;   
 }
+
+
