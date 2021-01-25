@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <title>Gestion commercial</title>
+    <title>Ative Bretagne Informatique</title>
 </head>
 <body>
 <?php include('headerConnecte.php') ?>

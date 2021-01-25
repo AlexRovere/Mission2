@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <script src="script.js"></script>
-    <title>Actualités</title>
+    <script src="script.js" async></script>
+    <title>Ative Bretagne Informatique</title>
 </head>
 <body>
 <?php include('header.php') ?>

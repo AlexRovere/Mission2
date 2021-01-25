@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <title>Création</title>
+    <title>Ative Bretagne Informatique</title>
 </head>
 <body>
 
@@ -34,11 +34,11 @@
 
                     <p class="pFormCreationClient">    
                         <label>Raison sociale</label> 
-                        <input class="formInputCreationClientBloc1" type="text" name="raisonSociale">
+                        <input class="formInputCreationClientBloc1" type="text" name="raisonSociale" required maxlength="32">
                     </p>  
                     <p class="pFormCreationClient">    
                         <label>Téléphone</label> 
-                        <input class="formInputCreationClientBloc1" type="text" name="telephone">
+                        <input class="formInputCreationClientBloc1" type="text" name="telephone" maxlength="15">
                     </p>  
                     <p class="pFormCreationClient">    
                         <label>Adresse</label>
@@ -66,15 +66,15 @@
                     </p>  
                     <p class="pFormCreationClient">    
                         <label>Domaine</label>
-                        <input class="formInputCreationClientBloc2" type="text" name="domaine">
+                        <input class="formInputCreationClientBloc2" type="text" name="domaine" maxlength="25" >
                     </p>  
                     <p class="pFormCreationClient">    
                         <label>Effectifs</label>
-                        <input class="formInputCreationClientBloc2" type="text" name="effectifs">
+                        <input class="formInputCreationClientBloc2" type="number" name="effectifs">
                     </p>  
                     <p class="pFormCreationClient">    
                         <label>Chiffres d'affaires</label>
-                        <input class="formInputCreationClientBloc2" type="text" name="chiffreAffaires">
+                        <input class="formInputCreationClientBloc2" type="number" step="any" name="chiffreAffaires">
                     </p> 
 
                 </div>

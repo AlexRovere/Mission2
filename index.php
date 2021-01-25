@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <script src="script.js"></script>
-    <title>Mision 2</title>
+    <script src="script.js" async></script>
+    <title>Active Bretagne Informatique</title>
 </head>
 <body>
 
@@ -22,34 +22,28 @@
             <p class="connexion">CONNEXION</p>
         </a>
 
-          <!--fond-->
+          
     <div class="modalComponent hiddenModal">
         <div class="modalBackDrop" onclick="hideModal()"></div>
-            <!--bloc-->
             <div class="modal">
                 <a href="#" class="fermerModal"  onclick="hideModal()">X</a>
-                <!--formulaire (x2) /contenu -->
-                <form method="post">
+                <form method="post" action="mainIntranet.php" id="formConnexion">
                     <div class="formModal">
                         <div class="mailModal">
                             <label for="Identifiant/e-mail">Identifiant/e-mail<br></label>
-                            <input class="inputModal" type="text" name="mail" id="mail">
+                            <input class="inputModal" type="text" name="mailConnexion" id="mailConnexion">
                         </div>
                     </div>
-                </form>
-                <form method="post">
+              
                     <div class="formModal">
                         <div class="motDePasseModal">
                             <label for="Identifiant/e-mail" >Mot de passe<br></label>
-                            <input class="inputModal" type="text" name="mot de passe" id="motDePasse">
+                            <input class="inputModal" type="password" name="mot de passe" id="motDePasse">
                         </div>
                     </div>
+                    <input type="submit" class="boutonModal connexionTxtModal" value="Connexion">
                 </form>
-                <!-- bouton connexion -->
-                <div class="boutonModal">
-                    <a href="mainIntranet.php" class="connexionTxtModal">Connexion</a>
-                </div>
-            <!--//bloc-->        
+                     
             </div>
     </div>
   
