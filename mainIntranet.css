@@ -1,25 +1,15 @@
 /* PAGE ACCUEIL INTRANET */
 
-#titreIntranet
-{
-    color : #064654;
-    text-align: center;
-    margin-bottom: 40px;
-}
-
 #blocImgIntranet
 {
     display: flex;
-    justify-content: space-between;
-    margin-left: 10%;
-    margin-right: 10%;
+    justify-content: space-around;
 }
 
 
 .blocNavIntranet 
 {
     background-color: #E2F4F9;
-    margin-right: 10%;
     height: 300px;
     width: 313px;
     display: flex;
@@ -36,22 +26,9 @@
     font-size: 2.5em;
 }
 
-#sousTitreIntranet
-{
-    color : #064654;
-    text-align: center;
-    margin-bottom: 40px;
-    font-size: 250%;
-    margin-top: -3%;
-}
-
 .blocImgActualitesIntranet{
     display: flex;
-    justify-content: space-between;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+    justify-content: space-around;
 }
 
 .blocArticleActualitesIntranet {

@@ -11,7 +11,7 @@
     <?php include('headerConnecte.php')?>
     <p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Accueil intranet</p>
 
-    <h2 id="titreIntranet" >BIENVENUE SUR VOTRE ESPACE PERSONNEL</h2>
+    <h2 class="h2Centre" >BIENVENUE SUR VOTRE ESPACE PERSONNEL</h2>
 
     <div id="blocImgIntranet">
 
@@ -31,7 +31,7 @@
 
     <hr class="hrIndex"> 
 
-    <h2 id="sousTitreIntranet">L’actualité de l’entreprise </h2>
+    <h2 class="h2Centre">L’actualité de l’entreprise </h2>
 
     <div class="blocImgActualitesIntranet">
         
