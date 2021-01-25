@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php include('headerConnecte.php')?>
-    <p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Accueil intranet</p>
+    <p class="miette"><a href="indexConnecte.php"><img src="img/home.png" id="logoMiette"></a>  / Accueil intranet</p>
 
     <h2 class="h2Centre" >BIENVENUE SUR VOTRE ESPACE PERSONNEL</h2>
 

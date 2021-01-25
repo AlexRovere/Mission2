@@ -8,7 +8,7 @@
 <body>
 <?php include('headerConnecte.php') ?>
 <?php include('menuSecondaireIntranet.php') ?>
-<div class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a><a href="commercial">  / Gestion commerciale </a> / Liste clients</div>
+<div class="miette"><a href="indexConnecte.php"><img src="img/home.png" id="logoMiette"></a><a href="mainIntranet.php">  / Accueil Intranet</a><a href="commercial.php">  / Gestion commerciale </a> / Liste clients</div>
 <h2 class="h2Centre">Gestion commerciale</h2>
 
 <?php include('rechercheIntranet.php') ?>

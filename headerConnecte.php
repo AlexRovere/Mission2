@@ -14,10 +14,10 @@
             </div>
             <div class="boutons">
                 <div class="headerButton">
-                    <a href=""><p class="HeaderTextButton">Intranet</p></a>
+                    <a href="mainIntranet.php"><p class="HeaderTextButton">Intranet</p></a>
                 </div>
                 <div class="headerButton">
-                    <a href=""><p class="HeaderTextButton">Deconnexion</p></a>
+                    <a href="index.php"><p class="HeaderTextButton">Deconnexion</p></a>
                 </div>
             </div>
         </div>
