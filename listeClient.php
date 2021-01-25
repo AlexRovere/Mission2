@@ -10,7 +10,7 @@
 <body>
 <?php include('headerConnecte.php') ?>
 <?php include('menuSecondaireIntranet.php') ?>
-<div class="miette"><a href="index.html"><img src="img/home.png" id="logoMiette"></a>  / Gestion Commerciale</div>
+<div class="miette"><a href="index.html"><img src="img/home.png" id="logoMiette"></a>  /Gestion Commerciale</div>
 <h2 class="h2Centre">GESTION COMMERCIALE</h2>
 <form class="searchForm">
     <input class="searchInput" type="search" value="" placeholder= "Rechercher un client...">
@@ -53,25 +53,61 @@
                     <td>2</td>
                     <td>La maison Fournier</td>
                     <td>02.03.04.05.06</td>
-                    <td><button class="tableauClientButton actionButton">ACTION</button></td>
+                    <td class="dropdown">
+                        <button class="tableauClientButton actionButton">ACTION</button>
+                        <ul class="dropdownContent">
+                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="#">Liste contact</a></li>
+                            <li><a href="#">Liste documents</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
                     <td>3</td>
                     <td>Soleillans</td>
                     <td>03.04.05.04.05</td>
-                    <td><button class="tableauClientButton actionButton">ACTION</button></td>
+                    <td class="dropdown">
+                        <button class="tableauClientButton actionButton">ACTION</button>
+                        <ul class="dropdownContent">
+                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="#">Liste contact</a></li>
+                            <li><a href="#">Liste documents</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
                     <td>4</td>
                     <td>Fromagerie d'Auxon</td>
                     <td>04.05.06.07.08</td>
-                    <td><button class="tableauClientButton actionButton">ACTION</button></td>
+                    <td class="dropdown">
+                        <button class="tableauClientButton actionButton">ACTION</button>
+                        <ul class="dropdownContent">
+                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="#">Liste contact</a></li>
+                            <li><a href="#">Liste documents</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </td>
                 </tr>
                 <tr>
                     <td>5</td>
                     <td>invitation à la ferme</td>
                     <td>02.06.08.09.07</td>
-                    <td><button class="tableauClientButton actionButton">ACTION</button></td>
+                    <td class="dropdown">
+                        <button class="tableauClientButton actionButton">ACTION</button>
+                        <ul class="dropdownContent">
+                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="#">Liste contact</a></li>
+                            <li><a href="#">Liste documents</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </td>
                 </tr>
             </tbody>
         </table>

@@ -120,14 +120,15 @@ input::placeholder {
 .dropdownContent{
     display: none;
     position: absolute;
-    background-color: #E2F4F9;
+    background-color:#096A80;
     list-style: none;
     width: 100%;
+    z-index: 1;
 }
 
 .dropdownContent a{
     text-decoration: none;
-    color:#096A80;   
+    color:#E2F4F9;
 }    
 
 .dropdown:hover .dropdownContent {
