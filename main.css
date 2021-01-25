@@ -41,6 +41,7 @@ h1 {
 h2 {
     font-size: 2em;
     line-height: 100px;
+    margin-bottom: 3%;
 }
 
 /* HEADER */
@@ -259,6 +260,7 @@ address a {
 
 footer {
 background-color: #096A80;
+margin-top: 5%;
 }
 
 #footerListe {
