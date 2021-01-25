@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
     <title>Actualités</title>
 </head>
 <body>
@@ -10,8 +11,7 @@
 <?php include('menuSecondaire.php') ?>
 <p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Actualités</p>
 
-    <h2 id="titrePageActualites" >L’actualité d’Active Bretagne Informatique</h2>
-    <hr class="hrIndex"> 
+    <h2 class="h2Centre" >L’actualité d’Active Bretagne Informatique</h2> 
 
     <div class="blocImgActualites">
 
