@@ -12,21 +12,20 @@
 
 <?php include('menuSecondaireIntranet.php') ?>
 
-<p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Gestion commerciale / Création client</p>
+<div class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a><a href="commercial">  / Gestion commerciale </a> / Création client</div>
 
 <h2 class="h2Centre">Création client</h2>
 
-<form class="searchForm">
-    <input class="searchInput" type="search" value="" placeholder= "&#128269; Rechercher un client...">
-</form>
-<div class="container">
+<?php include('rechercheIntranet.php') ?>
+
+<div class="containerGestionCommercial">
     <aside class="sideBar">
             <ul class="function">
-                <li><a href="#">Liste des clients</a></li>
-                <li><a href="#">Création client</a></li>
+                <li><a href="listeClient.php">Liste des clients</a></li>
+                <li><a href="creationClient.php">Création client</a></li>
             </ul>
     </aside>
-    <div class="interfaceCreationClient">
+    <div class="interface">
 
         <form id="formCreationClient" method="post" action="">
 

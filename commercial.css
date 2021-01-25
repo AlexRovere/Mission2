@@ -2,6 +2,11 @@
 
 /*gestion commercial*/
 
+.miette a {
+    text-decoration: none;
+    color: #096A80;
+}
+
 .searchForm {
     display: flex;
    justify-content: left;
