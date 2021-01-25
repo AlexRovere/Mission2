@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="commercial.css">
-    <title>Document</title>
+    <title>Création</title>
 </head>
 <body>
 
