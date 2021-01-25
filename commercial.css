@@ -4,9 +4,9 @@
 
 .searchForm {
     display: flex;
-   justify-content: center;
+   justify-content: left;
    width: 100%;
-   height: 40px;
+   height: 50px;
    margin-bottom: 5%;
 }
 .searchInput {
@@ -14,10 +14,8 @@
     height:100%;
     background-color: #096A80;
     color: #E2F4F9;
-
-    margin-left: 23.5%;
     cursor: pointer;
-
+    margin-left: 17%;
 }
 
 input::placeholder {
@@ -31,7 +29,7 @@ input::placeholder {
 }
 
 
-.container {
+.containerGestionCommercial {
     display:flex;
     min-height: 600px;
     margin-bottom: 5%;
@@ -40,12 +38,13 @@ input::placeholder {
 }
 
 .sideBar {
-    width: 22%;  
+    width: 17%;  
 }
 
 .function {
     list-style: none;
     margin-top: 10%;
+    padding-left: 0px;   
 }
 
 .function a {
@@ -65,7 +64,7 @@ input::placeholder {
 
 .interface {
     background-color: #E2F4F9;
-    width: 76%;
+    width: 83%;
 }
 
 .function a {
