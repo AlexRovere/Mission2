@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <title>Mision 2</title>
+    <script src="script.js" async></script>
+    <title>Ative Bretagne Informatique</title>
 </head>
 <body>
 
@@ -19,19 +20,19 @@
     <form id="formContact" method="post" action="">
      <p class="pContact">
          <label>Nom</label>        
-         <input class="formInput" type="text" name="nom">
+         <input class="formInput" type="text" name="nom" required maxlength="32">
     </p>  
     <p class="pContact">
          <label>Email</label>
-         <input class="formInput" type="email" name="mail">
+         <input class="formInput" type="email" name="mail" required maxlength="32">
     </p>  
     <p class="pContact">
          <label>Sujet</label>
-         <input class="formInput" type="text" name="sujet">
+         <input class="formInput" type="text" name="sujet" required maxlength="32">
     </p>  
     <p class="pContact">
         <label>Message</label>
-        <textarea id="formTextArea" type="textarea" name="message">
+        <textarea id="formTextArea" type="textarea" name="message" required>
         </textarea>
     
         <input id ="formBouton" type="submit" value="ENVOYER">
