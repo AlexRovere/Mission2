@@ -340,7 +340,6 @@ margin-top: 5%;
     border-radius: 20px 0px 0px 20px;
     filter: drop-shadow(5px 4px 20px #096A80);
     margin-top: 50px;
-    margin-bottom: 100px;
 }
 
 #formContact {
@@ -443,7 +442,6 @@ margin-top: 5%;
 #loadMore {
     background-color: #f2f9fb;
     text-align: center;
-    margin-bottom: 4%;
     margin-right: 40%;
     margin-left: 40%;
     padding-top: 1%;
@@ -474,7 +472,6 @@ margin-top: 5%;
     margin-right: auto;
     background-color: #E2F4F9;
     width: 75%;
-    margin-bottom: 10%;
     border-radius: 20px 0px 0px 20px;
     height: 25%;
 }
@@ -591,3 +588,151 @@ margin-top: 5%;
     color: #E2F4F9;
     font-weight: bold;
 }
+
+/* PAGE ACCUEIL INTRANET */
+
+#blocImgIntranet
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.blocNavIntranet 
+{
+    background-color: #E2F4F9;
+    height: 300px;
+    width: 313px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px #064654;
+}
+
+.textNav
+{
+    color:#064654;
+    font-family:  BebasNeue, "impact", Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+}
+
+.blocImgActualitesIntranet{
+    display: flex;
+    justify-content: space-around;
+}
+
+.blocArticleActualitesIntranet {
+    padding-top: 1%;
+    padding-bottom: 10%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 1px solid #064654;
+    height: 460px;
+    box-shadow: 2px 2px 2px 2px #064654;
+}
+
+.blocImgActualitesIntranet h3 {
+    font-size: 120%;
+    padding-top: 5%;
+}
+
+
+
+/* CSS MODAL */
+
+/*fond*/
+.modalComponent {
+    z-index: 1;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+/*JS*/
+.hiddenModal {
+    display:none;
+}
+.modalBackDrop {
+    z-index: 2;
+    position: absolute;
+    opacity:0.5;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.test {
+    height:20px;
+    width: 20px;
+}
+/*bloc*/
+.modal {
+    z-index: 3;
+    width: 498px;
+    height: 287px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 5px 5px 7px rgba(0, 0, 0, 0.25);
+    padding-top: 10px;
+}
+.fermerModal {
+    float:right;
+    color:grey;
+    font-family: Chivo;
+    text-decoration: none;
+    margin-right: 10px;
+}
+/*formulaires (x2)*/
+.test {
+    position:absolute;
+}
+.formModal {
+    display:flex;
+    flex-direction:column;
+}
+.modal-backdrop {
+    position:absolute;
+}
+.mailModal {
+    font-family: Chivo;
+    font-size: 20px;
+    line-height: 24px;
+    color: #096A80;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.motDePasseModal {
+    font-family: Chivo;
+    font-size: 20px;
+    line-height: 24px;
+    color: #096A80;
+    margin-left: 10px;
+}
+.inputModal {
+    border-radius:25px 0px 0px 25px;
+    width:450px;
+    height: 50px;
+    background-color: #E2F4F9;
+    box-shadow:1px 1px 2px #C0C0C0 inset;
+    border:none;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+.connexionTxtModal {
+    color: #E2F4F9;
+    font-family: Chivo;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.boutonModal {
+    height:50px;
+    width:135px;
+    background-color: #0C94B3;
+    float:right;
+    margin-right:25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
