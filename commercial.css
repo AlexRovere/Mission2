@@ -1,6 +1,6 @@
 
 
-/*commercialutilisateur*/
+/*gestion commercial*/
 
 .searchForm {
     display: flex;
@@ -9,6 +9,7 @@
    height: 50px;
    margin-bottom: 5%;
 }
+
 .searchInput {
     width: 50%;
     height:100%;
