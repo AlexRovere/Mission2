@@ -13,7 +13,7 @@
 
     <p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Contact</p>
 
-    <h2>Besoin d'un devis personnalisé ? Une suggestion ? Contactez-nous !</h2>
+    <h2 class="h2Centre">Besoin d'un devis personnalisé ? Une suggestion ? Contactez-nous !</h2>
 
     <section id="blocContact">
     <form id="formContact" method="post" action="">

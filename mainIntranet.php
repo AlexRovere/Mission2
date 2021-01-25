@@ -15,17 +15,17 @@
 
     <div id="blocImgIntranet">
 
-        <div class="blocNavIntranet">
-            <p class='textNav'>RESSOURCES</br>HUMAINES</p></a>
-        </div>
+        <a href="#"><div class="blocNavIntranet">
+            <p class='textNav'>RESSOURCES</br>HUMAINES</p>
+        </div></a>
     
-        <div class="blocNavIntranet">
-            <p class='textNav'>GESTION</br>COMMERCIALE</p></a>
-        </div>
+        <a href="commercial.php"><div class="blocNavIntranet">
+            <p class='textNav'>GESTION</br>COMMERCIALE</p>
+        </div></a>
 
-        <div class="blocNavIntranet">
-            <p class='textNav'>GESTION</br>PROJETS</p></a>
-        </div>
+        <a href="#"><div class="blocNavIntranet">
+            <p class='textNav'>GESTION</br>PROJETS</p>
+        </div></a>
     
     </div>
 

@@ -26,7 +26,7 @@
                     <div class="formModal">
                         <div class="mailModal">
                             <label for="Identifiant/e-mail">Identifiant/e-mail<br></label>
-                            <input type="text" name="mail" id="mail">
+                            <input class="inputModal" type="text" name="mail" id="mail">
                         </div>
                     </div>
                 </form>
@@ -34,7 +34,7 @@
                     <div class="formModal">
                         <div class="motDePasseModal">
                             <label for="Identifiant/e-mail" >Mot de passe<br></label>
-                            <input type="text" name="mot de passe" id="motDePasse">
+                            <input class="inputModal" type="text" name="mot de passe" id="motDePasse">
                         </div>
                     </div>
                 </form>
