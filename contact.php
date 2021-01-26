@@ -1,3 +1,7 @@
+<?php 
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +12,13 @@
 </head>
 <body>
 
-    <?php include('header.php') ?>
+<?php 
+    if (isset ($_SESSION['mailConnexion'])) {
+        include('headerConnecte.php');
+    } else {
+        include('header.php');
+    }
+?>
 
     <?php include('menuSecondaire.php') ?>
 
