@@ -7,6 +7,7 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <script src="scriptAccesGestionCommerciale.js" async></script>
     <title>Ative Bretagne Informatique</title>
 </head>
 <body>
@@ -21,7 +22,7 @@ session_start();
     <aside class="sideBar">
         <ul class="function">
             <li><a href="listeClient.php">Liste des clients</a></li>
-            <li><a href="creationClient.php">Création client</a></li>
+            <li><a href="creationClient.php" class="accesActionClient">Création client</a></li>
         </ul>
     </aside>
     <div class="interface">
