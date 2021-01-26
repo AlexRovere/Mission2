@@ -103,8 +103,8 @@ session_start();
                 </div>
             </div>
         </div>
-        <div class="boutonsMSPositions">
-            <div class="accesActionClient boutonsMSForme">
+        <div class="accesActionClient boutonsMSPositions">
+            <div class="boutonsMSForme">
                 <a class="boutonsMSTxt" href=>Modifier</a>
             </div>
             <div class="boutonsMSForme">
