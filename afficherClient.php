@@ -103,7 +103,7 @@
                 <a class="boutonsMSTxt" href=>Modifier</a>
             </div>
             <div class="boutonsMSForme">
-                <a class="boutonsMSTxt" href=>Modifier</a>
+                <a class="boutonsMSTxt" href=>Supprimer</a>
             </div>
         </div>
     </div> 
