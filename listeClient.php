@@ -1,13 +1,11 @@
-<?php 
-session_start();
+<?php session_start();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <title>Ative Bretagne Informatique</title>
+    <title>Gestion commercial</title>
 </head>
 <body>
 <?php include('headerConnecte.php') ?>
@@ -36,27 +34,9 @@ session_start();
             </thead>
             <tbody class="corpsTableauClient">
                 <tr>
-
-
-                <?php
-                try
-                {
-                    $bdd = new PDO('mysql:host=localhost;dbname=abi;charset=utf8', 'root', '');
-                }
-                catch (Exception $e)
-                {
-                    die('Erreur : ' . $e->getMessage());
-                }
-
-                $reponse = $bdd->query('SELECT idClient, raisonSociale, telephoneClient FROM client');
-
-                while($donnees = $reponse->fetch())
-                {
-                ?>
-              
-                    <td><?php echo $donnees['idClient'];?></td>
-                    <td><?php echo $donnees['raisonSociale'];?></td>
-                    <td><?php echo $donnees['telephoneClient'];?></td>
+                    <td>1</td>
+                    <td>Il était un fruit</td>
+                    <td>01.02.03.04.05</td>
                     <td class="dropdown">
                         <button class="tableauClientButton actionButton">ACTION</button>
                         <ul class="dropdownContent">
@@ -69,11 +49,65 @@ session_start();
                     </td>
                 </tr>
                 <tr>
-                
-                <?php 
-                }
-                ?>
-                    
+                    <td>2</td>
+                    <td>La maison Fournier</td>
+                    <td>02.03.04.05.06</td>
+                    <td class="dropdown">
+                        <button class="tableauClientButton actionButton">ACTION</button>
+                        <ul class="dropdownContent">
+                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="#">Liste contact</a></li>
+                            <li><a href="#">Liste documents</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Soleillans</td>
+                    <td>03.04.05.04.05</td>
+                    <td class="dropdown">
+                        <button class="tableauClientButton actionButton">ACTION</button>
+                        <ul class="dropdownContent">
+                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="#">Liste contact</a></li>
+                            <li><a href="#">Liste documents</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Fromagerie d'Auxon</td>
+                    <td>04.05.06.07.08</td>
+                    <td class="dropdown">
+                        <button class="tableauClientButton actionButton">ACTION</button>
+                        <ul class="dropdownContent">
+                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="#">Liste contact</a></li>
+                            <li><a href="#">Liste documents</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>invitation à la ferme</td>
+                    <td>02.06.08.09.07</td>
+                    <td class="dropdown">
+                        <button class="tableauClientButton actionButton">ACTION</button>
+                        <ul class="dropdownContent">
+                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="#">Liste contact</a></li>
+                            <li><a href="#">Liste documents</a></li>
+                            <li><a href="#">Modifier</a></li>
+                            <li><a href="#">Supprimer</a></li>
+                        </ul>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>
