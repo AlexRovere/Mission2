@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,9 +10,22 @@
     <title>Ative Bretagne Informatique</title>
 </head>
 <body>
-<?php include('header.php') ?>
+<?php 
+    if (isset ($_SESSION['matricule'])) {
+        include('headerConnecte.php');
+    } else {
+        include('header.php');
+    }
+?>
 <?php include('menuSecondaire.php') ?>
-<p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Qui sommes nous</p>
+
+<p class="miette"><a href="<?php 
+    if (isset ($_SESSION['matricule'])) {
+        echo "indexConnecte.php";
+    } else {
+        echo "index.php";
+    }
+?>"><img src="img/home.png" id="logoMiette"></a>  / Qui sommes nous</p>
 <section>
     <h2 class="h2Centre">Notre histoire</h2>
     <p id="histoire">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum commodi repellat id sequi eveniet veritatis provident eos doloremque quos corrupti corporis beatae aspernatur rem mollitia, tempore esse sed veniam incidunt.

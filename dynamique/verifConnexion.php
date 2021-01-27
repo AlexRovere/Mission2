@@ -31,10 +31,10 @@ else
 {
     if ($isPasswordCorrect) {
         session_start();
-        $_session['matricule'] = $resultat['matricule'];
-        $_session['prenom'] = $resultat['prenomCollabo'];
-        $_session['nom'] = $resultat['nomCollabo'];
-        $_session['qualification'] = $resultat['qualification'];
+        $_SESSION['matricule'] = $resultat['matricule'];
+        $_SESSION['prenom'] = $resultat['prenomCollabo'];
+        $_SESSION['nom'] = $resultat['nomCollabo'];
+        $_SESSION['qualification'] = $resultat['qualification'];
         header("location: mainIntranet.php");
     }
     else {

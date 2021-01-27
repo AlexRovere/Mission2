@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,11 +11,23 @@
 </head>
 <body>
 
-    <?php include('header.php') ?>
+<?php 
+    if (isset ($_SESSION['matricule'])) {
+        include('headerConnecte.php');
+    } else {
+        include('header.php');
+    }
+?>
 
     <?php include('menuSecondaire.php') ?>
 
-    <p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Contact</p>
+    <p class="miette"><a href="<?php 
+    if (isset ($_SESSION['matricule'])) {
+        echo "indexConnecte.php";
+    } else {
+        echo "index.php";
+    }
+?>"><img src="img/home.png" id="logoMiette"></a>  / Contact</p>
 
     <h2 class="h2Centre">Besoin d'un devis personnalisé ? Une suggestion ? Contactez-nous !</h2>
 

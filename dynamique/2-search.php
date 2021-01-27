@@ -28,7 +28,7 @@ $results = $stmt->fetchAll();
 
 ?>
 
-<!-- // if(isset($_POST['ajax'])) { echo json_encode($results); } -->
+
 
 
 
