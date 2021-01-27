@@ -1,13 +1,8 @@
-<?php 
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <script src="scriptAccesGestionCommerciale.js" async></script>
     <title>Ative Bretagne Informatique</title>
 </head>
 <body>
@@ -22,7 +17,7 @@ session_start();
     <aside class="sideBar">
         <ul class="function">
             <li><a href="listeClient.php">Liste des clients</a></li>
-            <li><a href="creationClient.php" class="accesActionClient">Création client</a></li>
+            <li><a href="creationClient.php">Création client</a></li>
         </ul>
     </aside>
     <div class="interface">
@@ -35,6 +30,40 @@ session_start();
                     <th><button class="tableauClientButton triButton">TRI</button></th>
                 </tr>
             </thead>
+            <tbody class="corpsTableauClient">
+                <tr>
+            <?php
+
+if (isset($_POST['search'])) {
+  
+  require "2-search.php";
+
+ 
+  if (count($results) > 0) {
+    foreach ($results as $donnees) {
+      ?>
+      <td><?php echo $donnees['idClient'];?></td>
+      <td><?php echo $donnees['raisonSociale'];?></td>
+      <td><?php echo $donnees['telephoneClient'];?></td>
+      <td class="dropdown">
+            <button class="tableauClientButton actionButton">ACTION</button>
+            <ul class="dropdownContent">
+                <li><a href="#">Fiche client</a></li>
+                <li><a href="#">Liste contact</a></li>
+                <li><a href="#">Liste documents</a></li>
+                <li><a href="#">Modifier</a></li>
+                <li><a href="#">Supprimer</a></li>
+            </ul>
+        </td>
+                </tr>
+                 
+      <?php 
+    }
+  } else { echo "Aucun résultat"; }
+}
+?>
+
+              
         </table>
     </div>
 </div>
