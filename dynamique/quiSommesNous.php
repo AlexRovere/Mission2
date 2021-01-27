@@ -1,7 +1,3 @@
-<?php 
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,15 +7,7 @@ session_start();
     <title>Ative Bretagne Informatique</title>
 </head>
 <body>
-
-<?php 
-    if (isset ($_SESSION['mailConnexion'])) {
-        include('headerConnecte.php');
-    } else {
-        include('header.php');
-    }
-?>
-
+<?php include('header.php') ?>
 <?php include('menuSecondaire.php') ?>
 <p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Qui sommes nous</p>
 <section>

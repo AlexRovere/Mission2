@@ -1,10 +1,3 @@
-<?php 
-session_start();
-if ((isset ($_SESSION['mailConnexion']))==false) {
-    $_SESSION["mailConnexion"]= $_POST["mailConnexion"];
-} 
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>

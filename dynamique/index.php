@@ -1,7 +1,3 @@
-<?php 
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +27,7 @@ session_start();
         <div class="modalBackDrop" onclick="hideModal()"></div>
             <div class="modal">
                 <a href="#" class="fermerModal"  onclick="hideModal()">X</a>
-                <form method="post" action="mainIntranet.php" id="formConnexion">
+                <form method="post" action="verifConnexion.php" id="formConnexion">
                     <div class="formModal">
                         <div class="mailModal">
                             <label for="Identifiant/e-mail">Identifiant/e-mail<br></label>
@@ -42,7 +38,7 @@ session_start();
                     <div class="formModal">
                         <div class="motDePasseModal">
                             <label for="Identifiant/e-mail" >Mot de passe<br></label>
-                            <input class="inputModal" type="password" name="mot de passe" id="motDePasse">
+                            <input class="inputModal" type="password" name="motDePasse" id="motDePasse">
                         </div>
                     </div>
                     <input type="submit" class="boutonModal connexionTxtModal" value="Connexion">

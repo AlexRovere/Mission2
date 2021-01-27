@@ -1,7 +1,3 @@
-<?php 
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,7 +19,7 @@ session_start();
         </div>
         <div id="headerDroit">
             <div class="identification">
-                <p>Bienvenue <?php echo $_SESSION['mailConnexion']; ?><br>
+                <p>Bienvenue Jean-Pierre<br>
                 Vous etes connecté en tant que : Responsable Commercial</p>
             </div>
             <div class="boutons">
@@ -31,7 +27,7 @@ session_start();
                     <a href="mainIntranet.php"><p class="HeaderTextButton">Intranet</p></a>
                 </div>
                 <div class="headerButton">
-                    <a href="deconnexion.php"><p class="HeaderTextButton">Deconnexion</p></a>
+                    <a href="index.php"><p class="HeaderTextButton">Deconnexion</p></a>
                 </div>
             </div>
         </div>

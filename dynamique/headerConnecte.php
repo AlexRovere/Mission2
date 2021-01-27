@@ -9,15 +9,15 @@
         </div>
         <div id="headerDroit">
             <div class="identification">
-                <p>Bienvenue <?php echo $_SESSION['mailConnexion']; ?><br>
-                Vous etes connecté en tant que : Responsable Commercial</p>
+                <p>Bienvenue <?php echo $_session['prenom']?><br>
+                Vous etes connecté en tant que : <?php echo $_session['qualification']?></p>
             </div>
             <div class="boutons">
                 <div class="headerButton">
                     <a href="mainIntranet.php"><p class="HeaderTextButton">Intranet</p></a>
                 </div>
                 <div class="headerButton">
-                    <a href="deconnexion.php"><p class="HeaderTextButton">Deconnexion</p></a>
+                    <a href="index.php"><p class="HeaderTextButton">Deconnexion</p></a>
                 </div>
             </div>
         </div>
