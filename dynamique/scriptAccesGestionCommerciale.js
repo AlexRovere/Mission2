@@ -1,5 +1,5 @@
 let accesActionClient = document.getElementsByClassName("accesActionClient");
-let user = "";
+let user = $_SESSION['qualification'];
 
   if (user == ("commercial" || "responsable Commerciale" || "administrateur") ){
     accesActionClient.style.display= "block";

@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +22,8 @@
         </div>
         <div id="headerDroit">
             <div class="identification">
-                <p>Bienvenue Jean-Pierre<br>
-                Vous etes connecté en tant que : Responsable Commercial</p>
+            <p>Bienvenue <?php echo $_SESSION['prenom']?><br>
+                Vous etes connecté en tant que : <?php echo $_SESSION['qualification']?></p>
             </div>
             <div class="boutons">
                 <div class="headerButton">

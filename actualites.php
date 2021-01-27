@@ -1,7 +1,3 @@
-<?php 
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,16 +9,20 @@ session_start();
 <body>
 
 <?php 
-    if (isset ($_SESSION['mailConnexion'])) {
-        include('headerConnecte.php');
-    } else {
+   {
         include('header.php');
     }
 ?>
 
 <?php include('menuSecondaire.php') ?>
 
-<p class="miette"><a href="index.php"><img src="img/home.png" id="logoMiette"></a>  / Actualités</p>
+<p class="miette"><a href="<?php 
+    if (isset ($_SESSION['matricule'])) {
+        echo "indexConnecte.php";
+    } else {
+        echo "index.php";
+    }
+?>"><img src="img/home.png" id="logoMiette"></a>  / Actualités</p>
 
     <h2 class="h2Centre" >L’actualité d’Active Bretagne Informatique</h2> 
 
