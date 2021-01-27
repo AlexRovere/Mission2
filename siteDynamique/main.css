@@ -484,6 +484,7 @@ margin-top: 5%;
 .equipe td {
     padding: 10px;
     vertical-align: center;
+    border: none;
 }
 
 .direction {

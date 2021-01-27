@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <script src="scriptAccesGestionCommerciale.js" async></script>
     <title>Gestion commercial</title>
 </head>
 <body>

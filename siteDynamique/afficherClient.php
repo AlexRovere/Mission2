@@ -6,6 +6,10 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <script>
+        let qualification = "<?php echo $_SESSION['qualification']; ?>";
+    </script>
+    <script src="scriptAccesGestionCommerciale.js" async></script>
     <title>Gestion commercial</title>
 </head>
 <body>

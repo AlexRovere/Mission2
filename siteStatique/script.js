@@ -24,4 +24,3 @@ $verifConnexion.addEventListener("submit", function(evenement)  {
         document.$mdp.focus(); 
     }
 });
-

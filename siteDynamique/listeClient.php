@@ -6,6 +6,10 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
+    <script>
+        let qualification = "<?php echo $_SESSION['qualification']; ?>";
+    </script>
+    <script src="scriptAccesGestionCommerciale.js" async></script>
     <title>Ative Bretagne Informatique</title>
 </head>
 <body>
@@ -20,7 +24,7 @@ session_start();
     <aside class="sideBar">
             <ul class="function">
                 <li><a href="listeClient.php">Liste des clients</a></li>
-                <li><a href="creationClient.php">Création client</a></li>
+                <li><a href="creationClient.php" class="accesActionClient">Création client</a></li>
             </ul>
     </aside>
     <div class="interface">
@@ -62,8 +66,8 @@ session_start();
                             <li><a href="#">Fiche client</a></li>
                             <li><a href="#">Liste contact</a></li>
                             <li><a href="#">Liste documents</a></li>
-                            <li><a href="#">Modifier</a></li>
-                            <li><a href="#">Supprimer</a></li>
+                            <li><a href="#" class="accesActionClient">Modifier</a></li>
+                            <li><a href="#" class="accesActionClient">Supprimer</a></li>
                         </ul>
                     </td>
                 </tr>
