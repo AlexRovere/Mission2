@@ -17,7 +17,7 @@ session_start();
 
 <div class="miette"><a href="indexConnecte.php"><img src="img/home.png" id="logoMiette"></a><a href="mainIntranet.php">  / Accueil Intranet</a><a href="commercial.php">  / Gestion commerciale </a> / Création client</div>
 
-<h2 class="h2Centre">Création client</h2>
+<h2 class="h2Centre" class="accesActionClient">Création client</h2>
 
 <?php include('rechercheIntranet.php') ?>
 
