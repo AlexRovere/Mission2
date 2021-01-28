@@ -1,6 +1,7 @@
 <?php 
 session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,8 +45,56 @@ session_start();
                             <input class="inputModal" type="password" name="motDePasse" id="motDePasse">
                         </div>
                     </div>
-                    <input type="submit" class="boutonModal connexionTxtModal" value="Connexion">
+                    <div id="conteneurConnexionModal">
+                        <div id="connexionModalAlert"></div>
+                    <input id="btn-login" type="submit" class="boutonModal connexionTxtModal" value="Connexion">
+                    </div>
                 </form>
+                <script>
+                    const $btnLogin = document.getElementById("btn-login");
+                    const $mailInput = document.getElementById("mailConnexion");
+                    const $passwordInput = document.getElementById("motDePasse");
+
+                    $btnLogin.addEventListener('click', function(evt){
+                        evt.preventDefault(); //bloque l'évenement prévu
+                        const url = "verifConnexion.php"; 
+                        const matricule = $mailInput.value;
+                        const motDePasse = $passwordInput.value;
+                        const requestOptions = {
+                            method: "POST",
+                            body: JSON.stringify({ 
+                                matricule: matricule,
+                                motDePasse: motDePasse
+                            }),
+                            headers: new Headers({
+                                'Content-Type': 'application/json'
+                            })
+                        }
+
+                        fetch(url, requestOptions)
+                            .then(function(response){
+                                return response.json();
+                            })
+                            .then(function(data){
+                                
+                                if(data.success){
+                                    // Logged in
+                                    window.location = "mainIntranet.php";
+                                }else{
+
+                                document.getElementById('formConnexion').reset();    
+
+                               let alert = document.getElementById('connexionModalAlert');
+                               alert.innerHTML = 'Mauvais identifiant ou mot de passe ! ';
+                                
+                               
+                                    // Errors
+                                    // => display errors in modal
+                                }
+                            });
+
+                    })
+                </script>
                      
             </div>
     </div>

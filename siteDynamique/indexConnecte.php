@@ -30,7 +30,7 @@ session_start();
                     <a href="mainIntranet.php"><p class="HeaderTextButton">Intranet</p></a>
                 </div>
                 <div class="headerButton">
-                    <a href="index.php"><p class="HeaderTextButton">Deconnexion</p></a>
+                    <a href="deconnexion.php"><p class="HeaderTextButton">Deconnexion</p></a>
                 </div>
             </div>
         </div>

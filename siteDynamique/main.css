@@ -738,7 +738,17 @@ margin-top: 5%;
     align-items: center;
 }
 
+#connexionModalAlert {
+align-items: center;
+display: flex;
+color:red;
+}
 
+#conteneurConnexionModal {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 25px;
+}
 
 /*gestion commercial*/
 
