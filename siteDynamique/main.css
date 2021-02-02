@@ -860,6 +860,10 @@ input::placeholder {
     cursor: pointer;
 }
 
+.supprimerClient {
+    color: red;
+}
+
 /*liste client*/
 
 .tableauClient td {

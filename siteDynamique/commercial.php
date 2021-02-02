@@ -55,16 +55,16 @@ if (isset($_POST['search'])) {
       <td class="dropdown">
             <button class="tableauClientButton actionButton">ACTION</button>
             <ul class="dropdownContent">
-                <li><a href="#">Fiche client</a></li>
-                <li><a href="#">Liste contact</a></li>
-                <li><a href="#">Liste documents</a></li>
-                <li><a href="#" class="accesActionClient">Modifier</a></li>
-                <li><a href="#" class="accesActionClient">Supprimer</a></li>
+                <li><a href="#">Afficher client</a></li>
+                <li><a href="#" class="accesActionClient">Modifier client</a></li>
+                <li><a href="#" class="accesActionClient">Ajouter contact</a></li>
+                <li><a href="#" class="accesActionClient supprimerClient">Supprimer</a></li>
             </ul>
         </td>
                 </tr>
                  
       <?php 
+      print_r($donnees['idClient']);
     }
   } else { echo "Aucun résultat"; }
 }
