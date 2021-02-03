@@ -38,8 +38,8 @@ session_start();
                         <?php 
                         $order = ""; 
 
-                        if(isset($_POST) && isset($_POST["order"])){
-                            $order = $_POST["order"];
+                        if(isset($_GET) && isset($_GET["order"])){
+                            $order = $_GET["order"];
                         }
 
                         $linkOrder = "";
@@ -53,11 +53,8 @@ session_start();
                                 break;
                         }
                         ?>
-                        <form method="POST">
-                            <input type="hidden" value="<?= $linkOrder ?>" name="order"/>
-                            <button class="tableauClientButton triButton" type="submit">TRI</button>
-                        </form>
-                        <!-- <button class="tableauClientButton triButton">TRI</button> -->
+
+                        <a href="?order=<?= $linkOrder ?>" class="tableauClientButton triButton">TRI</a>
                     </th>
                 </tr>
             </thead>
@@ -89,6 +86,8 @@ session_start();
                     return -1 * strcmp(strtolower($a["raisonSociale"]), strtolower($b["raisonSociale"]));
                 }
 
+                
+
                 if($order === ""){
                     // Nothing
                 }else if($order === "ASC"){
@@ -107,7 +106,7 @@ session_start();
                     <td class="dropdown">
                         <button class="tableauClientButton actionButton">ACTION</button>
                         <ul class="dropdownContent">
-                            <li><a href="#">Fiche client</a></li>
+                            <li><a href="ficheClient.php?id=<?= $donnees['idClient'] ?>">Fiche client</a></li>
                             <li><a href="#">Liste contact</a></li>
                             <li><a href="#">Liste documents</a></li>
                             <li><a href="#" class="accesActionClient">Modifier</a></li>
