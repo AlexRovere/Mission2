@@ -14,7 +14,12 @@ session_start();
 
     <?php include('menuSecondaireIntranet.php') ?>
 
-    <div class="miette"><a href="indexConnecte.php"><img src="img/home.png" id="logoMiette"></a><a href="mainIntranet.php">  / Accueil Intranet</a><a href="commercial.php">  / Gestion commerciale </a> / Création client</div>
+    <div class="miette">
+        <a href="indexConnecte.php"><img src="img/home.png" id="logoMiette"></a>
+        <a href="mainIntranet.php">  / Accueil Intranet</a>
+        <a href="commercial.php">  / Gestion commerciale </a> / Création client
+    </div>
+
     <h2 class="h2Centre">Création contact</h2>
 
     <?php include('rechercheIntranet.php') ?>
@@ -44,7 +49,9 @@ session_start();
                         </p>  
                     </div>
                 </div>
+
                 <hr class="hrIndex">
+                
                 <div id="bloc3CreationContact">
                     <p class="formCreationContactBloc3">               
                         <label class="labelCreationContactBottom">Photos</label>

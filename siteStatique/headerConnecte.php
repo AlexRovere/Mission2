@@ -14,7 +14,9 @@
             </div>
             <div class="boutons">
                 <div class="headerButton">
-                    <a href="mainIntranet.php"><p class="HeaderTextButton">Intranet</p></a>
+                    <a href="mainIntranet.php">
+                        <p class="HeaderTextButton">Intranet</p>
+                    </a>
                 </div>
                 <div class="headerButton">
                     <a href="index.php"><p class="HeaderTextButton">Deconnexion</p></a>

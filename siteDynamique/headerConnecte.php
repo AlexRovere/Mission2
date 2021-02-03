@@ -10,11 +10,14 @@
         <div id="headerDroit">
             <div class="identification">
                 <p>Bienvenue <?php echo $_SESSION['prenom']?><br>
-                Vous etes connecté en tant que : <?php echo $_SESSION['qualification']?></p>
+                Vous etes connecté en tant que : <?php echo $_SESSION['qualification']?>
+                </p>
             </div>
             <div class="boutons">
                 <div class="headerButton">
-                    <a href="mainIntranet.php"><p class="HeaderTextButton">Intranet</p></a>
+                    <a href="mainIntranet.php">
+                        <p class="HeaderTextButton">Intranet</p>
+                    </a>
                 </div>
                 <div class="headerButton">
                     <a href="deconnexion.php"><p class="HeaderTextButton">Deconnexion</p></a>

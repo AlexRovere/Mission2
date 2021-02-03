@@ -1,4 +1,5 @@
 <?php
+//ce fichier permet de chercher dans la BDD lorqu'on rentre une valeur dans la barre de recherche
 
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'abi');

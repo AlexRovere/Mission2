@@ -10,14 +10,19 @@ session_start();
     <title>Ative Bretagne Informatique</title>
 </head>
 <body>
-    <?php include('headerConnecte.php') ?>
+    <?php require('headerConnecte.php') ?>
 
-    <?php include('menuSecondaireIntranet.php') ?>
+    <?php require('menuSecondaireIntranet.php') ?>
 
-    <div class="miette"><a href="indexConnecte.php"><img src="img/home.png" id="logoMiette"></a><a href="mainIntranet.php">  / Accueil Intranet</a><a href="commercial.php">  / Gestion commerciale </a> / Modifier client</div>
+    <div class="miette">
+        <a href="indexConnecte.php"><img src="img/home.png" id="logoMiette"></a>
+        <a href="mainIntranet.php">  / Accueil Intranet</a>
+        <a href="commercial.php">  / Gestion commerciale </a> / Modifier client
+    </div>
+
     <h2 class="h2Centre">Modifier client</h2>
 
-    <?php include('rechercheIntranet.php') ?>
+    <?php require('rechercheIntranet.php') ?>
 
     <div class="containerGestionCommercial">
         <aside class="sideBar">
@@ -86,7 +91,6 @@ session_start();
                             <input class="buttonCreationClient" type="submit" value="Ajout Contact">
                         </div>    
                     </p>  
-                    
                     <p class="pFormCreationClientBloc3">    
                         <label class="labelCreationClientBottom">Commentaires</label>
                         <textarea id="textAreaCreationClientCommentaires" type="textarea" name="commentComm"></textarea>
@@ -101,6 +105,6 @@ session_start();
         </div>
     </div>
 
-    <?php include('footer.php')?>   
+    <?php require('footer.php')?>   
 </body>
 </html>
