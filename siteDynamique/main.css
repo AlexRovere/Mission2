@@ -11,21 +11,25 @@
             url('fonts/otf/BebasNeue-Regular.otf'),
             url('fonts/ttf/BebasNeue-Regular.ttf');
 }
+
 * {
     font-family: chivo, "Arial", Helvetica, sans-serif;
     box-sizing: border-box;
     margin : 0;
 }
+
 body {
     background-color: #F8FEFF;
     color : #064654;
     max-width: 3000px;
     max-height: 2000px;
 }
+
 #blocPage {
     margin-left: 10%;
     margin-right: 10%;
 }
+
 h1 {
     text-align: center;
     color: #064654;
@@ -33,11 +37,13 @@ h1 {
     font-size: 3.5em;
     line-height: 100px;
 }
+
 h2 {
     font-size: 2em;
     line-height: 100px;
     margin-bottom: 3%;
 }
+
 a {
     text-decoration: none;
 }
@@ -147,6 +153,7 @@ header {
     margin-top: -20px;
 }
 
+
 /* NAV */
 
 #blocNavImg {
@@ -155,22 +162,27 @@ header {
     margin-left: 10%;
     margin-right: 10%;
 }
+
 #imgQuiSommesNous {
   background-image: url("img/img_quiSommesNous.jpg");  
   height: 309px;
   width: 446.51px;
 }
+
 #imgContact {
     background-image: url("img/img_contact.png"); 
     height: 309px;
     width: 310px;
 }
+
+
 #imgActualités {
     background-image: url("img/img_actualites.png"); 
     height: 309px;
     width: 511px;
-
+   
 }
+
 .navTexte {
     color:white;
     font-size: 3em;
@@ -191,26 +203,31 @@ header {
     font-size: 50px;
     margin-top: 30px;
 }
+
 .barreAccueil::before,.barreAccueil::after {
     border-top: 2px solid; 
     content:"";
     flex: 1;
     margin:0 0.5em;
 }
+
 #resume {
     font-size: medium;
     line-height: 30px;
     text-align: justify;
 }
+
 .hrIndex {
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
 #situation {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 #devis {
     display:flex;
     background: #E2F4F9;
@@ -226,24 +243,30 @@ header {
     line-height: 36px;
     text-align: left;
 }
+
 address a {
     color: #096A80;
     font-style: normal;
     text-decoration: none;
 }
+
 #call {
     vertical-align: middle;
 }
+
 #mail {
    vertical-align: middle;
+
 }
+
 
 /* FOOTER */
 
 footer {
-    background-color: #096A80;
-    margin-top: 5%;
+background-color: #096A80;
+margin-top: 5%;
 }
+
 #footerListe {
     color : #F8FEFF;
     display: flex; 
@@ -253,10 +276,12 @@ footer {
     list-style-type: none; 
     font-size: large;
 }
+
 #footerListe a {
     text-decoration: none;
     color : #F8FEFF;
 }
+
 #footerListe a:hover {
     color: #0FB2D6 ;
     text-decoration: underline;
@@ -277,25 +302,31 @@ footer {
     font-size: 2em;
     height: 100px;
 }
+
 #navListe a {
     text-decoration: none;
     color : #064654;
 }
+
 #navListe a:hover {
     color: #0FB2D6 ;
     text-decoration: underline overline;
     font-size: xx-large;
 }
+
 .miette {
     font-size: 1.5em;
     color: #096A80;
     text-align: left;
     margin-top: 30px;
 }
-#logoMiette{
+
+#logoMiette
+{
     position: relative;
     bottom: -2px;
 }
+
 .navSecondaireBox {
     width: 33%;
     text-align: center;
@@ -314,6 +345,7 @@ footer {
     filter: drop-shadow(5px 4px 20px #096A80);
     margin-top: 50px;
 }
+
 #formContact {
     display: flex;
     flex-direction: column;
@@ -321,6 +353,7 @@ footer {
     align-items: center;
     padding-top: 30px;
 }
+
 .formInput {
     width: 100%;
     height: 40%;
@@ -329,6 +362,7 @@ footer {
     font-size: 1.2em;
     border:none;
 }
+
 #formTextArea {
     width: 100%;
     height: 200px;
@@ -337,7 +371,9 @@ footer {
     font-size: 0.8em;
     border:none;
     resize: none;
+
 }
+
 .pContact {
     width: 70%;
     height: 150px;
@@ -346,6 +382,7 @@ footer {
     color: #064654;
     font-weight: bold;
 }
+
 #formBouton {
     background-color: #E2F4F9;
     border-radius: 20px;
@@ -365,6 +402,7 @@ footer {
     vertical-align: 0px;
     margin-bottom: -40px;
 }
+
 .blocImgActualites {
     display: flex;
     justify-content: space-between;
@@ -373,10 +411,12 @@ footer {
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
 .blocImgActualites h3 {
     font-size: 120%;
     padding-top: 3%;
 }
+
 .blocArticleActualites {
     padding-top: 1%;
     padding-bottom: 10%;
@@ -385,10 +425,12 @@ footer {
     border: 1px solid black;
     height: 550px;
 }
+
 .paragrapheActualites {
     width: 333px;
     padding-top: 10%;
 }
+
 .enSavoirPlus {
     font-size: 100%;
     margin-top: 10%;
@@ -401,6 +443,7 @@ footer {
     padding-bottom: 2%;
     color: #064654;
 }
+
 #loadMore {
     background-color: #f2f9fb;
     text-align: center;
@@ -411,19 +454,24 @@ footer {
     border-radius: 10px;
     border: 1px solid black;
 }
+
 #textLoadMore {
     font-weight: bold;
 }
+
 /* PAGE QUISOMMENOUS */
 
 .h2Centre {
     text-align: center;
 }
+
 #histoire {
     font-size: medium;
     line-height: 30px;
     text-align: justify;
 }
+
+
 .equipe {
     margin-left: auto;
     margin-right: auto;
@@ -432,18 +480,22 @@ footer {
     border-radius: 20px 0px 0px 20px;
     height: 25%;
 }
+
 .equipe td {
     padding: 10px;
     vertical-align: center;
     border: none;
 }
+
 .direction {
     color: #096A80;
     padding-left: 25px;
 }
+
 .developpements {
     color: #064654;
 }
+
 
 /* PAGE CREATION CLIENT */
 
@@ -452,29 +504,31 @@ footer {
     margin-right: 5%;
 }
 
-    /* BLOC 1 (Raison social, tel, adresse) */
+/* BLOC 1 (Raison social, tel, adresse) */
 
 #bloc1Creationclient {
     display:flex;
     flex-direction: column;
     width: 60%;
 }
+
 .pFormCreationClient {
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
     align-items: center;
 }
+
 .formInputCreationClientBloc1 {
     width: 50%;   
     margin-right: 20%;
 }
+
 #containerCreationClientBlocTop {
     display: flex;
 }
 
-    /* BLOC 2 (Type, nature, etc..) */
-
+/* BLOC 2 (Type, nature, etc..) */
 #bloc2Creationclient {
     display:flex;
     flex-direction: column;
@@ -485,39 +539,46 @@ footer {
     width: 50%;   
 }
 
-    /* BLOC 3 (Contact, documents) */
-
+/* BLOC 3 (Contact, documents) */
 #bloc3CreationClient {
     display:flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .pFormCreationClientBloc3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom:5%;
 }
+
 .formInputCreationClientBloc3 {
     width: 50%;   
 }
+
 #textAreaCreationClientCommentaires {
     width: 50%; 
     height: 100px;
     resize: none;
 }
+
 .labelCreationClientBottom {
     width: 10%;
 }
+
 #formCreationClientFakeButton {
     width: 200px;
     height: 50px;
 }
+
 .flexCreationClient {
     display: flex;
     justify-content: space-around;
     margin-bottom: 5%;
+    
 }
+
 .buttonCreationClient {
     width: 200px;
     height: 50px;
@@ -529,67 +590,77 @@ footer {
     font-weight: bold;
 }
 
-/* PAGE CREATION CONTACT */
-
+/* PAGE CREATION Ctact */
 #formCreationContact {
     margin-left: 5%;
     margin-right: 5%;
 }
 
-    /* BLOC 1 (nom, prénom, téléphone) */
+/* BLOC 1 (nom, prénom, téléphone) */
 
 #bloc1CreationContact {
     display:flex;
     flex-direction: column;
     width: 60%;
 }
+
 .formCreationContact {
     display: flex;
     justify-content: space-between;
     margin-top: 10%;
     align-items: center;
 }
+
 .formInputCreationContactBloc1 {
     width: 50%;   
     margin-right: 20%;
 }
+
 #containerCreationContactBlocTop {
     display: flex;
 }
 
-    /* BLOC 3 (photo, Document) */
 
+/* BLOC 3 (photo, Document) */
 #bloc3CreationContact {
     display:flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
 .formCreationContactBloc3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom:5%;
 }
+
 .formInputCreationContactBloc3 {
     width: 50%;   
 }
+
 #textAreaCreationClientCommentaires {
     width: 50%; 
     height: 100px;
     resize: none;
 }
+
 .labelCreationContactBottom {
     width: 10%;
 }
+
 #formCreationContactFakeButton {
     width: 200px;
     height: 50px;
 }
+
 .flexCreationContact {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 5%; 
+    margin-bottom: 5%;
+    
 }
+
 .buttonCreationContact {
     width: 200px;
     height: 50px;
@@ -602,11 +673,15 @@ footer {
 }
 /* PAGE ACCUEIL INTRANET */
 
-#blocImgIntranet {
+#blocImgIntranet
+{
     display: flex;
     justify-content: space-around;
 }
-.blocNavIntranet  {
+
+
+.blocNavIntranet 
+{
     background-color: #E2F4F9;
     height: 300px;
     width: 313px;
@@ -616,15 +691,19 @@ footer {
     justify-content: center;
     box-shadow: 2px 2px 2px 2px #064654;
 }
-.textNav {
+
+.textNav
+{
     color:#064654;
     font-family:  BebasNeue, "impact", Arial, Helvetica, sans-serif;
     font-size: 2.5em;
 }
-.blocImgActualitesIntranet {
+
+.blocImgActualitesIntranet{
     display: flex;
     justify-content: space-around;
 }
+
 .blocArticleActualitesIntranet {
     padding-top: 1%;
     padding-bottom: 10%;
@@ -640,10 +719,11 @@ footer {
     padding-top: 5%;
 }
 
+
+
 /* CSS MODAL */
 
-    /*fond*/
-
+/*fond*/
 .modalComponent {
     z-index: 1;
     display: flex;
@@ -653,9 +733,7 @@ footer {
     width: 100%;
     height: 100%;
 }
-
-    /*JS*/
-
+/*JS*/
 .hiddenModal {
     display:none;
 }
@@ -671,9 +749,7 @@ footer {
     height:20px;
     width: 20px;
 }
-
-    /*bloc*/
-
+/*bloc*/
 .modal {
     z-index: 3;
     width: 498px;
@@ -689,9 +765,7 @@ footer {
     text-decoration: none;
     margin-right: 10px;
 }
-
-    /*formulaires (x2)*/
-
+/*formulaires (x2)*/
 .test {
     position:absolute;
 }
@@ -744,10 +818,11 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
 #connexionModalAlert {
-    align-items: center;
-    display: flex;
-    color:red;
+align-items: center;
+display: flex;
+color:red;
 }
 
 #conteneurConnexionModal {
@@ -756,19 +831,21 @@ footer {
     margin-left: 25px;
 }
 
-/* GESTION COMMERCIALE*/
+/*gestion commercial*/
 
 .miette a {
     text-decoration: none;
     color: #096A80;
 }
+
 .searchForm {
     display: flex;
-    justify-content: left;
-    width: 100%;
-    height: 50px;
-    margin-bottom: 5%;
+   justify-content: left;
+   width: 100%;
+   height: 50px;
+   margin-bottom: 5%;
 }
+
 .searchInput {
     width: 50%;
     height:100%;
@@ -777,63 +854,85 @@ footer {
     cursor: pointer;
     margin-left: 17%;
 }
+
 input::placeholder {
     color: #E2F4F9;
 }
+
+
 .searchButton {
     background-color: #096A80;
     cursor: pointer;
 }
+
+
 .containerGestionCommercial {
     display:flex;
     min-height: 600px;
     margin-bottom: 5%;
     justify-content: space-around;
+
 }
+
 .sideBar {
     width: 17%;  
 }
+
 .function {
     list-style: none;
     margin-top: 10%;
     padding-left: 0px;   
 }
+
 .function a {
     text-decoration: none;
     color : #096A80;
 }
+
 .function a:hover {
     font-weight: bold;
     text-decoration: underline;
+    
 }
+
 .function li {
     line-height: 4;
 }
+
 .interface {
     background-color: #E2F4F9;
     width: 83%;
 }
+
 .function a {
     text-decoration: none;
     color : #096A80;
     font-size: large;
 }
+
 .function a:hover {
     font-weight: bold;
     text-decoration: underline;
-    font-size: x-large; 
+    font-size: x-large;
+    
 }
+
 .tableauClient {
     width: 100%;
     border-collapse: collapse;
 }
+
+
 .tableauClient th, td {
     vertical-align: middle;
     border: solid;
 }
+
 .titreTableauClient {
     font-size: large;
 }
+
+
 .tableauClientButton {
     background-color: #096A80;
     color: #E2F4F9;
@@ -842,20 +941,24 @@ input::placeholder {
     cursor: pointer;
 }
 
+.supprimerClient {
+    color: red;
+}
 
 /*liste client*/
-
 
 .tableauClient td {
     border: 1px solid;
     text-align: center;
 }
+
 .dropdown {
     position: relative;
     display: inline-block;
     width: 100%;
 }
-.dropdownContent {
+
+.dropdownContent{
     display: none;
     position: absolute;
     background-color:#096A80;
@@ -863,21 +966,25 @@ input::placeholder {
     width: 100%;
     z-index: 1;
 }
-.dropdownContent a {
+
+.dropdownContent a{
     text-decoration: none;
     color:#E2F4F9;
 }    
+
 .dropdown:hover .dropdownContent {
     display: block;
     flex-direction: column;
     padding-left: 0;
 }
+
 .dropdown:hover .dropdownContent a:hover {
     text-decoration: underline;
     font-weight: bold;   
 }
+cre
 
-/*AFFICHER CLIENT*/
+/*afficherClient*/
 
 .contenuAfficherClient {
     display: flex;
@@ -944,6 +1051,7 @@ input::placeholder {
     width: 200px;
     height: 50px;
     background: #0C94B3;
+    
 }
 .boutonsMSTxt {
     color:#F8FEFF;
