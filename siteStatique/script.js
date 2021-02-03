@@ -1,3 +1,5 @@
+//script permettant de faire fonctionner le modal
+
 function showModal() {
     const $modal = document.querySelector(".hiddenModal");
     $modal.classList.replace("hiddenModal","modalComponent"); 
@@ -8,7 +10,7 @@ function hideModal() {
     $modal.classList.replace("modalComponent","hiddenModal"); 
     }
    
-    
+//vérification pour se connecter    
 $verifConnexion = document.getElementById('formConnexion');
 $verifConnexion.addEventListener("submit", function(evenement)  {
     $mail = document.getElementById('mailConnexion');

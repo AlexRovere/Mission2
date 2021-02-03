@@ -17,10 +17,10 @@ session_start();
     <div class="miette">
         <a href="indexConnecte.php"><img src="img/home.png" id="logoMiette"></a>
         <a href="mainIntranet.php">  / Accueil Intranet</a>
-        <a href="commercial.php">  / Gestion commerciale </a> / Création client
+        <a href="commercial.php">  / Gestion commerciale </a> / Modifier client
     </div>
 
-    <h2 class="h2Centre">Création client</h2>
+    <h2 class="h2Centre">Modifier client</h2>
 
     <?php require('rechercheIntranet.php') ?>
 
@@ -85,12 +85,11 @@ session_start();
                     <p class="pFormCreationClientBloc3">               
                         <label class="labelCreationClientBottom">Contacts</label>
                         <input class="formInputCreationClientBloc3" type="text" name="nomContact">
-                        <input class="buttonCreationClient" type="submit" value="Ajout Contact">
-                    </p>  
-                    <p class="pFormCreationClientBloc3">    
-                        <label class="labelCreationClientBottom">Documents</label>
-                        <input class="formInputCreationClientBloc3" type="text" name="documents">
-                        <input class="buttonCreationClient" type="submit" value="Ajout Document">
+                        <span id="formCreationClientFakeButton"><span> 
+                        <div class="flexCreationClient">
+                            <input class="buttonCreationClient" type="submit" value="Supprimer Contact">
+                            <input class="buttonCreationClient" type="submit" value="Ajout Contact">
+                        </div>    
                     </p>  
                     <p class="pFormCreationClientBloc3">    
                         <label class="labelCreationClientBottom">Commentaires</label>

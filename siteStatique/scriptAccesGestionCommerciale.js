@@ -1,3 +1,5 @@
+// script permettant d'afficher les fonctionnalités suivant l'utilisateur
+
 let accesActionClient = document.getElementsByClassName("accesActionClient");
 let user = "commercial";
 

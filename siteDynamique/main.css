@@ -842,7 +842,9 @@ input::placeholder {
     cursor: pointer;
 }
 
-/*LISTE CLIENTS*/
+
+/*liste client*/
+
 
 .tableauClient td {
     border: 1px solid;
