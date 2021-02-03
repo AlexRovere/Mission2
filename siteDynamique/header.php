@@ -1,20 +1,18 @@
-<header>
-    <div class="headerGauche">
-        <a href="index.php"><img src="img/logo.jpg" id="logo" alt="logo"></a>
-        <div id="ACI">
-            <p class="active">active<br></p>
-            <p class="bretagne">bretagne<br></p>
-            <p class="informatique">informatique<br></p>
+    <header>
+        <div class="headerGauche">
+            <a href="index.php"><img src="img/logo.jpg" id="logo" alt="logo"></a>
+            <div id="ACI">
+                <p class="active">active<br></p>
+                <p class="bretagne">bretagne<br></p>
+                <p class="informatique">informatique<br></p>
+            </div>
         </div>
-    </div>
-        
         <a id="connexion" href="#" onclick="showModal()">
             <img  id="account" src="img/account.png" alt="" height="35px">
             <p class="connexion">CONNEXION</p>
         </a>
-
         <div class="modalComponent hiddenModal">
-        <div class="modalBackDrop" onclick="hideModal()"></div>
+            <div class="modalBackDrop" onclick="hideModal()"></div>
             <div class="modal">
                 <a href="#" class="fermerModal"  onclick="hideModal()">X</a>
                 <form method="post" action="verifConnexion.php" id="formConnexion">
@@ -24,7 +22,6 @@
                             <input class="inputModal" type="text" name="mailConnexion" id="mailConnexion">
                         </div>
                     </div>
-              
                     <div class="formModal">
                         <div class="motDePasseModal">
                             <label for="Identifiant/e-mail" >Mot de passe<br></label>
@@ -36,6 +33,7 @@
                     <input id="btn-login" type="submit" class="boutonModal connexionTxtModal" value="Connexion">
                     </div>
                 </form>
+
                 <script>
                     const $btnLogin = document.getElementById("btn-login");
                     const $mailInput = document.getElementById("mailConnexion");
@@ -43,6 +41,11 @@
 
                     $btnLogin.addEventListener('click', function(evt){
                         evt.preventDefault(); //bloque l'évenement prévu
+                        const canSubmit = verifConnexionInputs();
+                            if(!canSubmit){
+                                return;
+                            }
+                            
                         const url = "verifConnexion.php"; 
                         const matricule = $mailInput.value;
                         const motDePasse = $passwordInput.value;
@@ -70,18 +73,15 @@
 
                                 document.getElementById('formConnexion').reset();    
 
-                               let alert = document.getElementById('connexionModalAlert');
-                               alert.innerHTML = 'Mauvais identifiant ou mot de passe ! ';
-                                
-                               
+                            let alert = document.getElementById('connexionModalAlert');
+                            alert.innerHTML = 'Mauvais identifiant ou mot de passe ! ';
                                     // Errors
                                     // => display errors in modal
                                 }
                             });
-
                     })
                 </script>
+            </div>
         </div>
-    </div>
-</header>
-<div id="blocPage">
+    </header>
+    <div id="blocPage">
