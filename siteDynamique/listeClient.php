@@ -108,8 +108,8 @@ session_start();
                         <ul class="dropdownContent">
                             <li><a href="afficherClient.php?id=<?= $donnees['idClient'] ?>">Fiche client</a></li>
                             <li><a href="#">Liste contact</a></li>
-                            <li><a href="#">Liste documents</a></li>
-                            <li><a href="#" class="accesActionClient">Modifier</a></li>
+                            <li><a href="#" class="accesActionClient">Ajouter contact</a></li>
+                            <li><a href="modifierClient.php?id=<?= $donnees['idClient'] ?>" class="accesActionClient">Modifier</a></li>
                             <li><a href="#" class="accesActionClient">Supprimer</a></li>
                         </ul>
                     </td>
