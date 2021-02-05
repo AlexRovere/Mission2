@@ -62,15 +62,8 @@ session_start();
                 <tr>
 
 
-                <?php
-                try
-                {
-                    $bdd = new PDO('mysql:host=localhost;dbname=abi;charset=utf8', 'root', '');
-                }
-                catch (Exception $e)
-                {
-                    die('Erreur : ' . $e->getMessage());
-                }
+               <?php require 'connexionBDD.php';
+               
 
                 $reponse = $bdd->query('SELECT idClient, raisonSociale, telephoneClient FROM client');
 
@@ -110,12 +103,13 @@ session_start();
                             <li><a href="#">Liste contact</a></li>
                             <li><a href="#">Liste documents</a></li>
                             <li><a href="#" class="accesActionClient">Modifier</a></li>
-                            <li><a href="#" class="accesActionClient">Supprimer</a></li>
+                            <li><a href="supprimerClient.php?id=<?= $donnees['idClient'] ?>" class="accesActionClient">Supprimer</a></li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
                 
+
                 <?php 
                 }
                 ?>
