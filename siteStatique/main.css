@@ -533,6 +533,78 @@ margin-top: 5%;
     font-weight: bold;
 }
 
+/* PAGE CREATION CONTACT */
+
+#formCreationContact {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+    /* BLOC 1 (nom, prénom, téléphone) */
+
+#bloc1CreationContact {
+    display:flex;
+    flex-direction: column;
+    width: 60%;
+}
+.formCreationContact {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    align-items: center;
+}
+.formInputCreationContactBloc1 {
+    width: 50%;   
+    margin-right: 20%;
+}
+#containerCreationContactBlocTop {
+    display: flex;
+}
+
+    /* BLOC 3 (photo, Document) */
+
+#bloc3CreationContact {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.formCreationContactBloc3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:5%;
+}
+.formInputCreationContactBloc3 {
+    width: 50%;   
+}
+#textAreaCreationClientCommentaires {
+    width: 50%; 
+    height: 100px;
+    resize: none;
+}
+.labelCreationContactBottom {
+    width: 10%;
+}
+#formCreationContactFakeButton {
+    width: 200px;
+    height: 50px;
+}
+.flexCreationContact {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5%; 
+}
+.buttonCreationContact {
+    width: 200px;
+    height: 50px;
+    background: #0C94B3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E2F4F9;
+    font-weight: bold;
+}
+
 /* PAGE ACCUEIL INTRANET */
 
 #blocImgIntranet {
