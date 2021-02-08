@@ -28,7 +28,7 @@
                 </ul>
         </aside>   
         <div class="interface">
-            <form id="formCreationContact" method="post" action="afficherClient.php" >
+            <form id="formCreationContact" method="post" action="afficherClient.php">
                 <div id="containerCreationContactBlocTop">
                     <div id="bloc1CreationContact">
                         <p class="formCreationContact">    

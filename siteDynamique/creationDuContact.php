@@ -1,5 +1,6 @@
 <?php 
 session_start();
+$id = ($_GET['id']);
 ?>
 
 <!DOCTYPE html>
@@ -32,20 +33,20 @@ session_start();
                 </ul>
         </aside>   
         <div class="interface">
-            <form id="formCreationContact" method="post" >
+            <form id="formCreationContact" method="post" action="traitementContact.php" >
                 <div id="containerCreationContactBlocTop">
                     <div id="bloc1CreationContact">
                         <p class="formCreationContact">    
                             <label>Nom </label> 
-                            <input class="formInputCreationContactBloc1" type="text" name="name" required maxlength="32">
+                            <input class="formInputCreationContactBloc1" type="text" name="nom" required maxlength="32">
                         </p>  
                         <p class="formCreationContact">    
                             <label>Prénom </label> 
-                            <input class="formInputCreationContactBloc1" type="text" name="firstname" maxlength="15">
+                            <input class="formInputCreationContactBloc1" type="text" name="prenom" maxlength="15">
                         </p>  
                         <p class="formCreationContact">    
                             <label>Telephone</label>
-                            <input class="formInputCreationContactBloc1" type="text" name="adresse">
+                            <input class="formInputCreationContactBloc1" type="text" name="telephone">
                         </p>  
                     </div>
                 </div>
@@ -55,17 +56,18 @@ session_start();
                 <div id="bloc3CreationContact">
                     <p class="formCreationContactBloc3">               
                         <label class="labelCreationContactBottom">Photos</label>
-                        <input class="formInputCreationContactBloc3" type="text" name="nomContact">
+                        <input class="formInputCreationContactBloc3" type="text" name="photo">
                         <input class="buttonCreationContact" type="submit" value="Ajout Photo">
                     </p>  
                     <p class="formCreationContactBloc3">    
                         <label class="labelCreationContactBottom">Documents</label>
-                        <input class="formInputCreationContactBloc3" type="text" name="documents">
+                        <input class="formInputCreationContactBloc3" type="text" name="document">
                         <input class="buttonCreationContact" type="submit" value="Ajout Document">
                     </p>  
                 </div>
                 <div class="flexCreationContact">
                     <input class="buttonCreationContact" type="submit" value="Annuler">
+                    <input type="hidden" value="<?php echo $id ?>" name="idClient"/>
                     <input class="buttonCreationContact" type="submit" value="Valider">
                 </div>    
             </form>
