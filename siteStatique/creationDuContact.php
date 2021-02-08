@@ -28,12 +28,12 @@
                 </ul>
         </aside>   
         <div class="interface">
-            <form id="formCreationContact" method="post" >
+            <form id="formCreationContact" method="post" action="afficherClient.php" >
                 <div id="containerCreationContactBlocTop">
                     <div id="bloc1CreationContact">
                         <p class="formCreationContact">    
                             <label>Nom </label> 
-                            <input class="formInputCreationContactBloc1" type="text" name="name" required maxlength="32">
+                            <input class="formInputCreationContactBloc1" type="text" name="name" maxlength="32">
                         </p>  
                         <p class="formCreationContact">    
                             <label>Prénom </label> 

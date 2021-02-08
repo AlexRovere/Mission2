@@ -54,7 +54,7 @@
                     </div>
                 </div>
                 <div class="donneesAffichageClientListes">
-                    <p class="infosTxtFixes">Contact</p>
+                    <p class="infosTxtFixes" id="ancreContact">Contact</p>
                     <div class="listeScroll ">
                         <ul>
                             <li>liste 1</li>
@@ -101,10 +101,10 @@
             </div>
             <div class="accesActionClient boutonsMSPositions">
                 <div class="boutonsMSForme">
-                    <a class="boutonsMSTxt" href=>Modifier</a>
+                    <a class="boutonsMSTxt" href="modifierClient.php">Modifier</a>
                 </div>
                 <div class="boutonsMSForme">
-                    <a class="boutonsMSTxt" href=>Supprimer</a>
+                    <a class="boutonsMSTxt" href="listeClient.php">Supprimer</a>
                 </div>
             </div>
         </div> 
