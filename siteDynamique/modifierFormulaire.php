@@ -1,10 +1,6 @@
 <?php 
 session_start();
 ?>
-<?php
-$id = ($_GET['id']);
-?>
-
  <?php
     try
     {
@@ -14,7 +10,7 @@ $id = ($_GET['id']);
     {
         die('Erreur : ' . $e->getMessage());
     }
-
+    $idClient = $_POST["idClient"];
     $raisonSociale = $_POST["raisonSociale"];
     $telephoneClient = $_POST["telephoneClient"];
     $adresse = $_POST["adresse"];
@@ -27,17 +23,17 @@ $id = ($_GET['id']);
     $commentComm = $_POST["commentComm"];
     
     
-    $modif = $bdd->prepare("UPDATE client SET raisonSociale = :raisonsociale, adresse = :adresse WHERE idClient=$id");
+    $modif = $bdd->prepare("UPDATE client SET raisonSociale = :raisonsociale, adresse = :adresse WHERE idClient=$idClient");
     $modif->execute(array (
         'raisonsociale' => $raisonSociale,
         'adresse' => $adresse
     ));
 
 
+    header("Location:afficherClient.php?id={$idClient}");
 
 
 
 
 
-
-    var_dump($_POST);
+   

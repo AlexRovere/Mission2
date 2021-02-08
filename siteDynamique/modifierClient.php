@@ -62,7 +62,7 @@ $id = ($_GET['id']);
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Téléphone</label> 
-                            <input class="formInputCreationClientBloc1" type="text" name="telephone" value="<?php echo $donnees['telephoneClient'];?>" maxlength="15">
+                            <input class="formInputCreationClientBloc1" type="text" name="telephoneClient" value="<?php echo $donnees['telephoneClient'];?>" maxlength="15">
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Adresse</label>
@@ -120,7 +120,8 @@ $id = ($_GET['id']);
                 </div>
                 <div class="flexCreationClient">
                     <input class="buttonCreationClient" type="submit" value="Annuler">
-                    <a href="modifierFormulaire.php?id=<?= $donnees['idClient'] ?>" class="buttonCreationClient">Valider</a>
+                    <input type="hidden" value="<?php echo $donnees['idClient'] ?>" name="idClient"/>
+                    <input class="buttonCreationClient" type="submit" value="Valider">
                 </div>    
             </form>
         </div>
