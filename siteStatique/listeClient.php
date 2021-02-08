@@ -46,10 +46,10 @@
                         <td class="dropdown">
                             <button class="tableauClientButton actionButton">ACTION</button>
                             <ul class="dropdownContent">
-                                <li><a href="#">Fiche client</a></li>
-                                <li><a href="#">Liste contact</a></li>
-                                <li><a href="#">Liste documents</a></li>
-                                <li><a href="#" class="accesActionClient">Modifier</a></li>
+                                <li><a href="afficherClient.php">Fiche client</a></li>
+                                <li><a href="afficherClient.php">Liste contact</a></li>
+                                <li><a href="creationDuContact.php">Ajouter contact</a></li>
+                                <li><a href="modifierClient.php" class="accesActionClient">Modifier</a></li>
                                 <li><a href="#" class="accesActionClient">Supprimer</a></li>
                             </ul>
                         </td>
@@ -61,10 +61,10 @@
                         <td class="dropdown">
                             <button class="tableauClientButton actionButton">ACTION</button>
                             <ul class="dropdownContent">
-                                <li><a href="#">Fiche client</a></li>
-                                <li><a href="#">Liste contact</a></li>
-                                <li><a href="#">Liste documents</a></li>
-                                <li><a href="#" class="accesActionClient">Modifier</a></li>
+                                <li><a href="afficherClient.php">Fiche client</a></li>
+                                <li><a href="afficherClient.php">Liste contact</a></li>
+                                <li><a href="creationDuContact.php">Ajouter contact</a></li>
+                                <li><a href="modifierClient.php" class="accesActionClient">Modifier</a></li>
                                 <li><a href="#" class="accesActionClient">Supprimer</a></li>
                             </ul>
                         </td>
@@ -76,10 +76,10 @@
                         <td class="dropdown">
                             <button class="tableauClientButton actionButton">ACTION</button>
                             <ul class="dropdownContent">
-                                <li><a href="#">Fiche client</a></li>
-                                <li><a href="#">Liste contact</a></li>
-                                <li><a href="#">Liste documents</a></li>
-                                <li><a href="#" class="accesActionClient">Modifier</a></li>
+                                <li><a href="afficherClient.php">Fiche client</a></li>
+                                <li><a href="afficherClient.php">Liste contact</a></li>
+                                <li><a href="creationDuContact.php">Ajouter contact</a></li>
+                                <li><a href="modifierClient.php" class="accesActionClient">Modifier</a></li>
                                 <li><a href="#" class="accesActionClient">Supprimer</a></li>
                             </ul>
                         </td>
@@ -91,10 +91,10 @@
                         <td class="dropdown">
                             <button class="tableauClientButton actionButton">ACTION</button>
                             <ul class="dropdownContent">
-                                <li><a href="#">Fiche client</a></li>
-                                <li><a href="#">Liste contact</a></li>
-                                <li><a href="#">Liste documents</a></li>
-                                <li><a href="#" class="accesActionClient">Modifier</a></li>
+                                <li><a href="afficherClient.php">Fiche client</a></li>
+                                <li><a href="afficherClient.php">Liste contact</a></li>
+                                <li><a href="creationDuContact.php">Ajouter contact</a></li>
+                                <li><a href="modifierClient.php" class="accesActionClient">Modifier</a></li>
                                 <li><a href="#" class="accesActionClient">Supprimer</a></li>
                             </ul>
                         </td>
@@ -106,10 +106,10 @@
                         <td class="dropdown">
                             <button class="tableauClientButton actionButton">ACTION</button>
                             <ul class="dropdownContent">
-                                <li><a href="#">Fiche client</a></li>
-                                <li><a href="#">Liste contact</a></li>
-                                <li><a href="#">Liste documents</a></li>
-                                <li><a href="#" class="accesActionClient">Modifier</a></li>
+                                <li><a href="afficherClient.php">Fiche client</a></li>
+                                <li><a href="afficherClient.php">Liste contact</a></li>
+                                <li><a href="creationDuContact.php">Ajouter contact</a></li>
+                                <li><a href="modifierClient.php" class="accesActionClient">Modifier</a></li>
                                 <li><a href="#" class="accesActionClient">Supprimer</a></li>
                             </ul>
                         </td>
