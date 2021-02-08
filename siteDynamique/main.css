@@ -899,7 +899,7 @@ input::placeholder {
 }
 .donneesAffichageClientListes {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     margin-bottom: 30px;
     margin-left: 30px;
 }
@@ -924,31 +924,40 @@ input::placeholder {
     font-family: Chivo ;
 }
 .infosTxtFixes {
+    width: 250px;
     font-weight:Bolder;
     font-size: 24px;
 }
 .listeScroll {
     overflow: auto;
-    height: 80px;
+    height: 30px;
     width: 500px;
     background-color:#F8FEFF;
-    margin-right: 70px;
+    margin-left: 150px;
+    font-size: 24px;
 }
-.boutonsMSPositions {
+.listeSansScroll {
+    height: auto;
+    width: 500px;
+    margin-left: 150px;
+    font-size: 24px;
+}
+.boutonsModifierSupprimerPositions {
     display: flex;
     justify-content: space-around;
     margin-bottom: 5%;
 }
-.boutonsMSForme {
+.boutonsModifierSupprimerForme {
     display: flex;
     justify-content: space-around;
     width: 200px;
     height: 50px;
     background: #0C94B3;
 }
-.boutonsMSTxt {
+.boutonsModifierSupprimerTxt {
     color:#F8FEFF;
     text-align: center;
     margin-top: 15px;
     font-weight: bold;
 }
+
