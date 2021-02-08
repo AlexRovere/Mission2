@@ -30,7 +30,7 @@ session_start();
     ));
 
 
-    header("Location:afficherClient.php?id={$idClient}");
+    header("Location:afficherClient.php?id=$idClient");
 
 
 
