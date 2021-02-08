@@ -28,12 +28,12 @@
                 </ul>
         </aside>   
         <div class="interface">
-            <form id="formCreationClient" method="post" action="formulaire.php">
+            <form id="formCreationClient" method="post" action="afficherClient.php">
                 <div id="containerCreationClientBlocTop">
                     <div id="bloc1Creationclient">
                         <p class="pFormCreationClient">    
                             <label>Raison sociale</label> 
-                            <input class="formInputCreationClientBloc1" type="text" name="raisonSociale" required maxlength="32">
+                            <input class="formInputCreationClientBloc1" type="text" name="raisonSociale">
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Téléphone</label> 
@@ -84,7 +84,7 @@
                         <span id="formCreationClientFakeButton"><span> 
                         <div class="flexCreationClient">
                             <input class="buttonCreationClient" type="submit" value="Supprimer Contact">
-                            <input class="buttonCreationClient" type="submit" value="Ajout Contact">
+                            <input class="buttonCreationClient" type="submit" formaction="creationDucontact.php" value="Ajout Contact">
                         </div>    
                     </p>  
                     <p class="pFormCreationClientBloc3">    
