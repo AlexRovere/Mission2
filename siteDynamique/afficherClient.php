@@ -37,15 +37,30 @@ $id = ($_GET['id']);
                 </ul>
         </aside>
         <div class="interface">
+            <?php
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=abi;charset=utf8', 'root', '');
+            }
+            catch (Exception $e)
+            {
+                die('Erreur : ' . $e->getMessage());
+            }
+            $info = $bdd->prepare("SELECT * FROM client WHERE idClient=$id");
+            $info->execute();
+            $infoId = $info->fetchAll();
+
+            foreach($infoId as $donnees)
+            ?>
+            
             <div class="contenuAfficherClient">
                 <div class="divNomDuClient">
-                    <p class="nomDuClient">nom du Client</p>
-                    <p class="nomDuClient">n°12345678910</p>
+                    <p class="nomDuClient"><?php echo $donnees['raisonSociale'];?></p>
+                    <p class="nomDuClient"><?php echo $donnees['idClient'];?></p>
                 </div>
                 <!--informations-->
                 <div class="donneesAffichageClient">
                     <div class="infosFixes">
-                        <p class="infosTxT infosTxtFixes">Raison sociale</p>
                         <p class="infosTxT infosTxtFixes">Type client</p>
                         <p class="infosTxT infosTxtFixes">Téléphone</p>
                         <p class="infosTxT infosTxtFixes">Domaine</p>
@@ -54,13 +69,12 @@ $id = ($_GET['id']);
                         <p class="infosTxT infosTxtFixes">Chiffre</p>
                     </div>
                     <div class="infosVariables">
-                        <p class="infosTxT">Raison sociale</p>
-                        <p class="infosTxT">Type client</p>
-                        <p class="infosTxT">Téléphone</p>
-                        <p class="infosTxT">Domaine</p>
-                        <p class="infosTxT">Adresse</p>
-                        <p class="infosTxT">Effectifs</p>
-                        <p class="infosTxT">Chiffre</p>
+                        <p class="infosTxT"><?php echo $donnees['typeSociete'];?></p>
+                        <p class="infosTxT"><?php echo $donnees['telephoneClient'];?></p>
+                        <p class="infosTxT"><?php echo $donnees['activite'];?></p>
+                        <p class="infosTxT"><?php echo $donnees['adresse'];?></p>
+                        <p class="infosTxT"><?php echo $donnees['effectif'];?></p>
+                        <p class="infosTxT"><?php echo $donnees['CA'];?></p>
                     </div>
                 </div>
                 <div class="donneesAffichageClientListes">
@@ -98,13 +112,7 @@ $id = ($_GET['id']);
                 <div class="donneesAffichageClientListes">
                     <p class="infosTxtFixes">Commentaires</p>
                     <div class="listeScroll">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In delectus voluptate omnis dolor suscipit voluptatem, sunt eaque ducimus necessitatibus aliquam. Quod ratione voluptatibus voluptates tenetur fugiat? Optio voluptatibus laboriosam possimus.
-                        Iste, aut esse sit corrupti distinctio sint harum fuga, iusto facere quam, eius temporibus voluptates velit? Voluptates ex vel hic sit a quis, cumque eveniet, id minus repellat odit atque.
-                        Quaerat quibusdam nam fugit, perspiciatis adipisci maxime ab labore sed nisi laboriosam, excepturi aliquid repellat? Nobis debitis quod dolor ut. Sint necessitatibus voluptatum voluptates error ipsam corrupti, molestiae adipisci ad.
-                        Vero iure mollitia nisi rem qui voluptates optio laudantium, corrupti, eum non laborum maiores similique? Aspernatur sunt perferendis obcaecati ipsa neque ipsam tenetur? Consequuntur, delectus dicta distinctio mollitia accusantium nesciunt?
-                        Eum sit delectus velit distinctio consequuntur, laboriosam nobis nemo, nesciunt alias architecto quae accusantium eos eveniet provident asperiores, officiis ducimus non pariatur natus illum reprehenderit! Dicta quo consectetur inventore aspernatur.
-                        Laborum pariatur minima temporibus maxime praesentium omnis molestiae. Id obcaecati hic deleniti beatae quae? Eum, quas. Dolorum repellat recusandae minima. Commodi accusantium, nostrum doloribus fugit reiciendis nemo ea iusto excepturi!
-                        Repudiandae eum consectetur at! Fuga laborum adipisci, animi ad sunt architecto dignissimos. Possimus, eum. Facilis amet commodi vitae voluptate minus nobis vero eveniet quam, ipsam impedit ullam magni reiciendis voluptatum.
+                        <p><?php echo $donnees['commentComm'];?>
                         </p>
                     </div>
                 </div>
@@ -113,7 +121,7 @@ $id = ($_GET['id']);
                         <a class="boutonsMSTxt" href=>Supprimer</a>
                     </div>
                     <div class="boutonsMSForme">
-                        <a class="boutonsMSTxt" href=>Modifier</a>
+                        <a class="boutonsMSTxt" href="modifierClient.php?id=<?= $donnees['idClient'] ?>">Modifier</a>
                     </div>
                 </div>
             </div>

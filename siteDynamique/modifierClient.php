@@ -1,6 +1,9 @@
 <?php 
 session_start();
 ?>
+<?php
+$id = ($_GET['id']);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -30,35 +33,53 @@ session_start();
                     <li><a href="listeClient.php">Liste des clients</a></li>
                     <li><a href="creationClient.php">Création client</a></li>
                 </ul>
-        </aside>   
+        </aside>
+
         <div class="interface">
-            <form id="formCreationClient" method="post" action="formulaire.php">
+            <?php
+            try
+            {
+                $bdd = new PDO('mysql:host=localhost;dbname=abi;charset=utf8', 'root', '');
+            }
+            catch (Exception $e)
+            {
+                die('Erreur : ' . $e->getMessage());
+            }
+            $info = $bdd->prepare("SELECT * FROM client WHERE idClient=$id");
+            $info->execute();
+            $infoId = $info->fetchAll();
+
+            foreach($infoId as $donnees)
+            ?>
+
+        <div class="interface">
+            <form id="formCreationClient" method="post" action="modifierFormulaire.php">
                 <div id="containerCreationClientBlocTop">
                     <div id="bloc1Creationclient">
                         <p class="pFormCreationClient">    
                             <label>Raison sociale</label> 
-                            <input class="formInputCreationClientBloc1" type="text" name="raisonSociale" required maxlength="32">
+                            <input class="formInputCreationClientBloc1" type="text" name="raisonSociale" value="<?php echo $donnees['raisonSociale'];?>" required maxlength="32">
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Téléphone</label> 
-                            <input class="formInputCreationClientBloc1" type="text" name="telephone" maxlength="15">
+                            <input class="formInputCreationClientBloc1" type="text" name="telephone" value="<?php echo $donnees['telephoneClient'];?>" maxlength="15">
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Adresse</label>
-                            <input class="formInputCreationClientBloc1" type="text" name="adresse">
+                            <input class="formInputCreationClientBloc1" type="text" name="adresse" value="<?php echo $donnees['adresse'];?>">
                         </p>  
                     </div>
                     <div id="bloc2Creationclient">
                         <p class="pFormCreationClient">    
                             <label>Type</label>
-                            <select class="formInputCreationClientBloc2" name ="typeSociete" id="type">
+                            <select class="formInputCreationClientBloc2" name ="typeSociete" id="type" value=<?php echo $donnees['typeSociete'];?>>
                                 <option value="prive">Privé</option>
                                 <option value="public">Public</option>
                             </select>
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Nature</label>
-                            <select class="formInputCreationClientBloc2" name ="nature" id="nature">
+                            <select class="formInputCreationClientBloc2" name ="nature" id="nature" value="<?php echo $donnees['nature'];?>">
                                 <option value="principal">Principal</option>
                                 <option value="secondaire">Secondaire</option>
                                 <option value="ancienne">Ancienne</option>
@@ -66,15 +87,15 @@ session_start();
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Activité</label>
-                            <input class="formInputCreationClientBloc2" type="text" name="activite" maxlength="25" >
+                            <input class="formInputCreationClientBloc2" type="text" name="activite" value="<?php echo $donnees['activite'];?>"maxlength="25" >
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Effectifs</label>
-                            <input class="formInputCreationClientBloc2" type="number" name="effectif">
+                            <input class="formInputCreationClientBloc2" type="number" name="effectif" value="<?php echo $donnees['effectif'];?>">
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Chiffres d'affaires</label>
-                            <input class="formInputCreationClientBloc2" type="number" step="any" name="CA">
+                            <input class="formInputCreationClientBloc2" type="number" step="any" name="CA" value="<?php echo $donnees['CA'];?>">
                         </p>
                     </div>
                 </div>
@@ -93,13 +114,13 @@ session_start();
                     </p>  
                     <p class="pFormCreationClientBloc3">    
                         <label class="labelCreationClientBottom">Commentaires</label>
-                        <textarea id="textAreaCreationClientCommentaires" type="textarea" name="commentComm"></textarea>
+                        <textarea id="textAreaCreationClientCommentaires" type="textarea" name="commentComm" value="<?php echo $donnees['commentComm'];?>"></textarea>
                         <span id="formCreationClientFakeButton"><span> 
                     </p>   
                 </div>
                 <div class="flexCreationClient">
                     <input class="buttonCreationClient" type="submit" value="Annuler">
-                    <input class="buttonCreationClient" type="submit" value="Valider">
+                    <a href="modifierFormulaire.php?id=<?= $donnees['idClient'] ?>" class="buttonCreationClient">Valider</a>
                 </div>    
             </form>
         </div>
