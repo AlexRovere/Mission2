@@ -10,7 +10,7 @@ function hideModal() {
     $modal.classList.replace("modalComponent","hiddenModal"); 
     }
    
-//vérification pour se connecter    
+// vérification pour se connecter    
 $verifConnexion = document.getElementById('formConnexion');
 $verifConnexion.addEventListener("submit", function(evenement)  {
     $mail = document.getElementById('mailConnexion');
@@ -26,3 +26,6 @@ $verifConnexion.addEventListener("submit", function(evenement)  {
         document.$mdp.focus(); 
     }
 });
+
+
+

@@ -29,16 +29,16 @@
                 </ul>
         </aside>
         <div class="interface">
-            <form id="formCreationClient" method="post" action="">
+            <form id="formCreationClient" method="post" action="afficherClient.php">
                 <div id="containerCreationClientBlocTop">
                     <div id="bloc1Creationclient">
                         <p class="pFormCreationClient">    
                             <label>Raison sociale</label> 
-                            <input class="formInputCreationClientBloc1" type="text" name="raisonSociale" required maxlength="32">
+                            <input class="formInputCreationClientBloc1" type="text" name="raisonSociale">
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Téléphone</label> 
-                            <input class="formInputCreationClientBloc1" type="text" name="telephone" maxlength="15">
+                            <input class="formInputCreationClientBloc1" type="text" name="telephone">
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Adresse</label>
@@ -79,16 +79,6 @@
                 <hr class="hrIndex">
 
                 <div id="bloc3CreationClient">
-                    <p class="pFormCreationClientBloc3">               
-                        <label class="labelCreationClientBottom">Contacts</label>
-                        <input class="formInputCreationClientBloc3" type="text" name="contacts">
-                        <input class="buttonCreationClient" type="submit" value="Ajout Contact">
-                    </p>  
-                    <p class="pFormCreationClientBloc3">    
-                        <label class="labelCreationClientBottom">Documents</label>
-                        <input class="formInputCreationClientBloc3" type="text" name="documents">
-                        <input class="buttonCreationClient" type="submit" value="Ajout Document">
-                    </p>  
                     <p class="pFormCreationClientBloc3">    
                         <label class="labelCreationClientBottom">Commentaires</label>
                         <textarea id="textAreaCreationClientCommentaires" type="textarea" name="commentaires"></textarea>
