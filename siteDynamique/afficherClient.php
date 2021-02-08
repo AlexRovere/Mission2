@@ -78,7 +78,7 @@ $id = ($_GET['id']);
                     </div>
                 </div>
                 <div class="donneesAffichageClientListes">
-                    <p class="infosTxtFixes">Contact</p>
+                    <p id="contact" class="infosTxtFixes">Contact</p>
                     <div class="listeScroll ">
                         <ul>
                             <li>liste 1</li>
