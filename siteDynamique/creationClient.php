@@ -84,14 +84,10 @@ session_start();
                 <div id="bloc3CreationClient">
                     <p class="pFormCreationClientBloc3">               
                         <label class="labelCreationClientBottom">Contacts</label>
-                        <input class="formInputCreationClientBloc3" type="text" name="nomContact">
+                        <select class="formInputCreationClientBloc3" type="text" name="nomContact"></select>
                         <input class="buttonCreationClient" type="submit" value="Ajout Contact">
                     </p>  
-                    <p class="pFormCreationClientBloc3">    
-                        <label class="labelCreationClientBottom">Documents</label>
-                        <input class="formInputCreationClientBloc3" type="text" name="documents">
-                        <input class="buttonCreationClient" type="submit" value="Ajout Document">
-                    </p>  
+                 
                     <p class="pFormCreationClientBloc3">    
                         <label class="labelCreationClientBottom">Commentaires</label>
                         <textarea id="textAreaCreationClientCommentaires" type="textarea" name="commentComm"></textarea>
