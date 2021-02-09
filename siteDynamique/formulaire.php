@@ -15,7 +15,6 @@
     $activite = $_POST["activite"];
     $effectif = $_POST["effectif"];
     $CA = $_POST["CA"];
-    $nomContact = $_POST["nomContact"];
     $commentComm = $_POST["commentComm"];
 
     try{
@@ -25,7 +24,7 @@
 
         //insertion des données reçues
         $sth = $dbco->prepare("
-        INSERT INTO client(raisonSociale, typeSociete, activite, adresse, telephoneClient, nature, CA, effectif, nomContact, commentComm) VALUES(:raisonSociale, :typeSociete, :activite, :adresse, :telephoneClient, :nature, :CA, :effectif, :nomContact, :commentComm)");
+        INSERT INTO client(raisonSociale, typeSociete, activite, adresse, telephoneClient, nature, CA, effectif, commentComm) VALUES(:raisonSociale, :typeSociete, :activite, :adresse, :telephoneClient, :nature, :CA, :effectif, :commentComm)");
         $sth->bindParam(':raisonSociale',$raisonSociale);
         $sth->bindParam(':typeSociete',$typeSociete);
         $sth->bindParam(':activite',$activite);
@@ -34,12 +33,11 @@
         $sth->bindParam(':nature',$nature);
         $sth->bindParam(':CA',$CA);
         $sth->bindParam(':effectif',$effectif);
-        $sth->bindParam(':nomContact',$nomContact);
         $sth->bindParam(':commentComm',$commentComm);
         $sth->execute();
 
         //renvoie vers la 1er page de gestion commercial
-        header("Location:commercial.php");
+        header("Location:listeClient.php");
     }
     catch(PDOException $e){
         echo 'Impossible de traiter les données. Erreur : '.$e->getMessage();

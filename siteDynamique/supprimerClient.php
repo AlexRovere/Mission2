@@ -9,3 +9,4 @@ if (isset($_GET['id'])) {
 }
 echo "Client numéro :  " . $_GET['id'] . " a bien été supprimé !" ;
 header("refresh:3; url= listeClient.php");
+echo "bonjour";

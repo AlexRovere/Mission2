@@ -878,6 +878,31 @@ input::placeholder {
     font-weight: bold;   
 }
 
+
+/* PAGE RESSOURCES HUMAINES */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr 0.7fr;
+    grid-template-rows: 1fr 3.9fr 1.1fr;
+    gap: 3% 3%;
+  }
+  
+.Recherche {
+    grid-area: 1 / 2 / 2 / 4; 
+}
+
+.Résultats { 
+    grid-area: 2 / 2 / 4 / 4; 
+    background-color:#E2F4F9;
+    display: flex;
+    justify-content: center;
+}
+
+.Menu { 
+    grid-area: 2 / 1 / 4 / 2;
+}
+
 /*AFFICHER CLIENT*/
 
 .contenuAfficherClient {
@@ -898,8 +923,8 @@ input::placeholder {
     margin-bottom: 70px;
 }
 .donneesAffichageClientListes {
-    display: flex;
     flex-direction: row;
+    display: flex;
     margin-bottom: 30px;
     margin-left: 30px;
 }
@@ -924,23 +949,23 @@ input::placeholder {
     font-family: Chivo ;
 }
 .infosTxtFixes {
-    width: 250px;
     font-weight:Bolder;
     font-size: 24px;
 }
-.listeScroll {
+.listeScroll { 
     overflow: auto;
     height: 30px;
     width: 500px;
-    background-color:#F8FEFF;
-    margin-left: 150px;
-    font-size: 24px;
+    background-color: #F8FEFF;
+    margin-right: 70px;
+    margin-left: 185px;
 }
 .listeSansScroll {
     height: auto;
-    width: 500px;
-    margin-left: 150px;
+    width: 550px;
     font-size: 24px;
+    float: left;
+    margin-left: 100px;
 }
 .boutonsModifierSupprimerPositions {
     display: flex;
@@ -960,4 +985,3 @@ input::placeholder {
     margin-top: 15px;
     font-weight: bold;
 }
-
