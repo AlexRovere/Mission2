@@ -34,3 +34,4 @@ function verifConnexionInputs(){
     }
     return true;
 }
+

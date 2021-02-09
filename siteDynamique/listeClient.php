@@ -10,6 +10,7 @@ session_start();
         let qualification = "<?php echo $_SESSION['qualification']; ?>";
     </script>
     <script src="scriptAccesGestionCommerciale.js" async></script>
+    <script src="scriptSupprimerClient.js" async></script>
     <title>Ative Bretagne Informatique</title>
 </head>
 <body>
@@ -92,7 +93,7 @@ session_start();
                 foreach($dataArray as $donnees)
                 {
                 ?>
-              
+
                     <td><?php echo $donnees['idClient'];?></td>
                     <td><?php echo $donnees['raisonSociale'];?></td>
                     <td><?php echo $donnees['telephoneClient'];?></td>
@@ -103,16 +104,15 @@ session_start();
                             <li><a href="afficherClient.php?id=<?= $donnees['idClient'] ?>#contact">Liste contact</a></li>
                             <li><a href="creationDuContact.php?id=<?= $donnees['idClient']?>" class="accesActionClient">Ajouter contact</a></li>
                             <li><a href="modifierClient.php?id=<?= $donnees['idClient'] ?>" class="accesActionClient">Modifier</a></li>
-                            <li><a href="supprimerClient.php?id=<?= $donnees['idClient'] ?>" class="accesActionClient">Supprimer</a></li>
+                            <li><a href="supprimerClient.php?id=<?= $donnees['idClient'] ?>" class="accesActionClient supprimerClient">Supprimer</a></li>
                         </ul>
                     </td>
                 </tr>
                 <tr>
-                
-
                 <?php 
                 }
                 ?>
+                  
                     
             </tbody>
         </table>

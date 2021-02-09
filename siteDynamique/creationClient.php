@@ -70,24 +70,18 @@ session_start();
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Effectifs</label>
-                            <input class="formInputCreationClientBloc2" type="number" name="effectif">
+                            <input class="formInputCreationClientBloc2" type="number" name="effectif" required>
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Chiffres d'affaires</label>
-                            <input class="formInputCreationClientBloc2" type="number" step="any" name="CA">
+                            <input class="formInputCreationClientBloc2" type="number" step="any" name="CA" required>
                         </p>
                     </div>
                 </div>
 
                 <hr class="hrIndex">
 
-                <div id="bloc3CreationClient">
-                    <p class="pFormCreationClientBloc3">               
-                        <label class="labelCreationClientBottom">Contacts</label>
-                        <select class="formInputCreationClientBloc3" type="text" name="nomContact"></select>
-                        <input class="buttonCreationClient" type="submit" value="Ajout Contact">
-                    </p>  
-                 
+                <div id="bloc3CreationClient">                                
                     <p class="pFormCreationClientBloc3">    
                         <label class="labelCreationClientBottom">Commentaires</label>
                         <textarea id="textAreaCreationClientCommentaires" type="textarea" name="commentComm"></textarea>

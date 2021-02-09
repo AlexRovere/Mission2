@@ -13,7 +13,7 @@ $id = ($_GET['id']);
         let qualification = "<?php echo $_SESSION['qualification']; ?>";
     </script>
     <script src="scriptAccesGestionCommerciale.js" async></script>
-    <title>Gestion commercial</title>
+    <title>Gestion commerciale</title>
 </head>
 <body>
     <?php require('headerConnecte.php') ?>
@@ -78,56 +78,72 @@ $id = ($_GET['id']);
                     </div>
                 </div>
                 <div class="donneesAffichageClientListes">
-                    <p id="ancreContact" class="infosTxtFixes">Contact</p>
-                    <div class="listeScroll ">
-                        <ul>
-                            <li>liste 1</li>
-                            <li>liste 2</li>
-                            <li>liste 3</li>
-                            <li>liste 4</li>
-                            <li>liste 5</li>
-                            <li>liste 6</li>
-                            <li>liste 7</li>
-                            <li>liste 8</li>
-                            <li>liste 9</li>
-                        </ul>
-                    </div>
+                    <p class="infosTxtFixes" id="ancreContact">Contact</p>
+                    <select class="listeScroll">
+                    <?php
+
+                    require 'connexionBDD.php';
+
+
+                    $req = $bdd->prepare("SELECT * FROM contact WHERE idClient = :idClient");
+                    $req->execute(['idClient' => $_GET['id']]);
+                    $results = $req->fetchall();
+
+                    if (count($results) > 0) {
+                        foreach ($results as $contacts) {
+                            echo "<option value={$contacts['idContact']}>NOM : {$contacts['nomContact']}   |   PRENOM : {$contacts['prenomContact']}   |   TEL : {$contacts['telContact']}</option>";
+                        }
+                    }
+
+                    ?>
+    
+                    </select>
                 </div>
                 <div class="donneesAffichageClientListes">
                     <p class="infosTxtFixes">Documents</p>
-                    <div class="listeScroll">
+                    <div class="listeSansScroll documentsImage">
                         <ul>
-                            <li>liste 1</li>
-                            <li>liste 2</li>
-                            <li>liste 3</li>
-                            <li>liste 4</li>
-                            <li>liste 5</li>
-                            <li>liste 6</li>
-                            <li>liste 7</li>
-                            <li>liste 8</li>
-                            <li>liste 9</li>
+                        <?php
+                        
+                        if(isset($contacts['idContact'])){
+                            require 'connexionBDD.php';
+
+                            $req = $bdd->prepare("SELECT * FROM document WHERE idContact = :idContact");
+                            $req->execute(['idContact' => $contacts['idContact']]);
+                            $results = $req->fetchall();
+
+                            if (count($results) > 0) {
+                                foreach ($results as $documents) {
+                                    echo "<li>Nom : {$documents['titre']} |  : {$documents['resume']}</li>";
+                                }
+                            }
+                        }
+
+                        ?>
                         </ul>
                     </div>
                 </div>
                 <div class="donneesAffichageClientListes">
                     <p class="infosTxtFixes">Commentaires</p>
-                    <div class="listeScroll">
-                        <p><?php echo $donnees['commentComm'];?>
+                    <div>
+                        <p class="listeSansScroll"><?php echo $donnees['commentComm'];?>
                         </p>
                     </div>
                 </div>
-                <div class="boutonsMSPositions">
-                    <div class="boutonsMSForme">
-                        <a class="boutonsMSTxt" href=>Supprimer</a>
-                    </div>
-                    <div class="boutonsMSForme">
-                        <a class="boutonsMSTxt" href="modifierClient.php?id=<?= $donnees['idClient'] ?>">Modifier</a>
-                    </div>
+                <div class="boutonsModifierSupprimerPositions">
+                    <a class="boutonsModifierSupprimerForme" href="#">
+                            <div class="boutonsModifierSupprimerTxt">Supprimer</div>
+                    </a>
+                    <a class="boutonsModifierSupprimerForme" href=#>
+                            <div class="boutonsModifierSupprimerTxt">Nouveau Contact</div>
+                    </a>
+                    <a class="boutonsModifierSupprimerForme" href="modifierClient.php?id=<?= $donnees['idClient']?>">
+                        <div class="boutonsModifierSupprimerTxt">Modifier</div>
+                    </a>
                 </div>
             </div>
         </div> 
     </div>
-
     <?php require('footer.php') ?>
 </body>
 </html>

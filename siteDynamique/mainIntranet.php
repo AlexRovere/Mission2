@@ -21,7 +21,7 @@ session_start();
     <h2 class="h2Centre" >BIENVENUE SUR VOTRE ESPACE PERSONNEL</h2>
 
     <div id="blocImgIntranet">
-        <a href="#">
+        <a href="ressourcesHumaines.php">
             <div class="blocNavIntranet">
                 <p class='textNav'>RESSOURCES</br>HUMAINES</p>
             </div>
@@ -31,7 +31,7 @@ session_start();
                 <p class='textNav'>GESTION</br>COMMERCIALE</p>
             </div>
         </a>
-        <a href="#">
+        <a href="projets.php">
             <div class="blocNavIntranet">
                 <p class='textNav'>GESTION</br>PROJETS</p>
             </div>
