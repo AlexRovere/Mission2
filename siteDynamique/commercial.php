@@ -60,7 +60,7 @@ session_start();
                                 <button class="tableauClientButton actionButton">ACTION</button>
                                 <ul class="dropdownContent">
                                     <li><a href="afficherClient.php?id=<?= $donnees['idClient'] ?>">Fiche client</a></li>
-                                    <li><a href="afficherClient.php?id=<?= $donnees['idClient'] ?>#contact">Liste contact</a></li>
+                                    <li><a href="afficherClient.php?id=<?= $donnees['idClient'] ?>#ancreContact">Liste contact</a></li>
                                     <li><a href="creationDuContact.php?id=<?= $donnees['idClient']?>" class="accesActionClient">Ajouter contact</a></li>
                                     <li><a href="modifierClient.php?id=<?= $donnees['idClient'] ?>" class="accesActionClient">Modifier</a></li>
                                     <li><a href="supprimerClient.php?id=<?= $donnees['idClient'] ?>" class="accesActionClient supprimerClient">Supprimer</a></li>
@@ -68,10 +68,15 @@ session_start();
                             </td>
                     </tr>
                         <?php 
-                                        print_r($donnees['idClient']);
+                                       
                                     }
-                                    } else { echo "Aucun résultat"; }
+                                   
+                                    }
+                                    
+                                else {
+                                    echo "Aucun résultat";
                             }
+                        }
                         ?>
                 </tbody> 
             </table>

@@ -132,13 +132,13 @@ $id = ($_GET['id']);
                     </div>
                 </div>
                 <div class="boutonsModifierSupprimerPositions">
-                    <a class="boutonsModifierSupprimerForme supprimerClient" href="supprimerClient.php?id=<?= $donnees['idClient'] ?>">
+                    <a class="boutonsModifierSupprimerForme supprimerClient accesActionClient" href="supprimerClient.php?id=<?= $donnees['idClient'] ?>">
                             <div class="boutonsModifierSupprimerTxt">Supprimer</div>
                     </a>
-                    <a class="boutonsModifierSupprimerForme" href="creationDuContact.php?id=<?= $donnees['idClient']?>">
+                    <a class="boutonsModifierSupprimerForme accesActionClient" href="creationDuContact.php?id=<?= $donnees['idClient']?>">
                             <div class="boutonsModifierSupprimerTxt">Nouveau Contact</div>
                     </a>
-                    <a class="boutonsModifierSupprimerForme" href="modifierClient.php?id=<?= $donnees['idClient']?>">
+                    <a class="boutonsModifierSupprimerForme accesActionClient" href="modifierClient.php?id=<?= $donnees['idClient']?>">
                         <div class="boutonsModifierSupprimerTxt">Modifier</div>
                     </a>
                 </div>

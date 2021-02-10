@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
     <script src="script.js"></script>
-    <title>Mision 2</title>
+    <title>Ative Bretagne Informatique</title>
 </head>
 <body>
     <header>

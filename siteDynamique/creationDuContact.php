@@ -38,7 +38,7 @@ $id = ($_GET['id']);
                     <div id="bloc1CreationContact">
                         <p class="formCreationContact">    
                             <label>Nom </label> 
-                            <input class="formInputCreationContactBloc1" type="text" name="nom" required maxlength="32">
+                            <input class="formInputCreationContactBloc1" type="text" name="nom" maxlength="32">
                         </p>  
                         <p class="formCreationContact">    
                             <label>Prénom </label> 

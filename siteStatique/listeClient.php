@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
     <script src="scriptAccesGestionCommerciale.js" async></script>
-    <title>Gestion commercial</title>
+    <title>Ative Bretagne Informatique</title>
 </head>
 <body>
     <?php require('headerConnecte.php') ?>
@@ -62,7 +62,7 @@
                             <button class="tableauClientButton actionButton">ACTION</button>
                             <ul class="dropdownContent">
                                 <li><a href="afficherClient.php">Fiche client</a></li>
-                                <li><a href="afficherClient.php">Liste contact</a></li>
+                                <li><a href="afficherClient.php#ancreContact">Liste contact</a></li>
                                 <li><a href="creationDuContact.php">Ajouter contact</a></li>
                                 <li><a href="modifierClient.php" class="accesActionClient">Modifier</a></li>
                                 <li><a href="#" class="accesActionClient">Supprimer</a></li>
@@ -77,7 +77,7 @@
                             <button class="tableauClientButton actionButton">ACTION</button>
                             <ul class="dropdownContent">
                                 <li><a href="afficherClient.php">Fiche client</a></li>
-                                <li><a href="afficherClient.php">Liste contact</a></li>
+                                <li><a href="afficherClient.php#ancreContact">Liste contact</a></li>
                                 <li><a href="creationDuContact.php">Ajouter contact</a></li>
                                 <li><a href="modifierClient.php" class="accesActionClient">Modifier</a></li>
                                 <li><a href="#" class="accesActionClient">Supprimer</a></li>
@@ -92,7 +92,7 @@
                             <button class="tableauClientButton actionButton">ACTION</button>
                             <ul class="dropdownContent">
                                 <li><a href="afficherClient.php">Fiche client</a></li>
-                                <li><a href="afficherClient.php">Liste contact</a></li>
+                                <li><a href="afficherClient.php#ancreContact">Liste contact</a></li>
                                 <li><a href="creationDuContact.php">Ajouter contact</a></li>
                                 <li><a href="modifierClient.php" class="accesActionClient">Modifier</a></li>
                                 <li><a href="#" class="accesActionClient">Supprimer</a></li>
@@ -107,7 +107,7 @@
                             <button class="tableauClientButton actionButton">ACTION</button>
                             <ul class="dropdownContent">
                                 <li><a href="afficherClient.php">Fiche client</a></li>
-                                <li><a href="afficherClient.php">Liste contact</a></li>
+                                <li><a href="afficherClient.php#ancreContact">Liste contact</a></li>
                                 <li><a href="creationDuContact.php">Ajouter contact</a></li>
                                 <li><a href="modifierClient.php" class="accesActionClient">Modifier</a></li>
                                 <li><a href="#" class="accesActionClient">Supprimer</a></li>
