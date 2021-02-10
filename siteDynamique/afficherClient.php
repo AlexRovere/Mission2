@@ -13,6 +13,7 @@ $id = ($_GET['id']);
         let qualification = "<?php echo $_SESSION['qualification']; ?>";
     </script>
     <script src="scriptAccesGestionCommerciale.js" async></script>
+    <script src="scriptSupprimerClient.js" async></script>
     <title>Gestion commerciale</title>
 </head>
 <body>
@@ -131,10 +132,10 @@ $id = ($_GET['id']);
                     </div>
                 </div>
                 <div class="boutonsModifierSupprimerPositions">
-                    <a class="boutonsModifierSupprimerForme" href="#">
+                    <a class="boutonsModifierSupprimerForme supprimerClient" href="supprimerClient.php?id=<?= $donnees['idClient'] ?>">
                             <div class="boutonsModifierSupprimerTxt">Supprimer</div>
                     </a>
-                    <a class="boutonsModifierSupprimerForme" href=#>
+                    <a class="boutonsModifierSupprimerForme" href="creationDuContact.php?id=<?= $donnees['idClient']?>">
                             <div class="boutonsModifierSupprimerTxt">Nouveau Contact</div>
                     </a>
                     <a class="boutonsModifierSupprimerForme" href="modifierClient.php?id=<?= $donnees['idClient']?>">
