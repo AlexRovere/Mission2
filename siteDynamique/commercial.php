@@ -39,10 +39,10 @@ session_start();
             <table class="tableauClient">
                 <thead class="titreTableauClient">
                     <tr>
-                        <th>ID</th>
-                        <th>RAISON SOCIALE</th>
-                        <th>TELEPHONE</th>
-                        <th><button class="tableauClientButton triButton">TRI</button></th>
+                        <th class="colonneId">ID</th>
+                        <th class="colonneNom">RAISON SOCIALE</th>
+                        <th class="colonneTel">TELEPHONE</th>
+                        <th class="colonneTri"><a href="#" class="tableauClientButton triButton">TRI</button></th>
                     </tr>
                 </thead>
                 <tbody class="corpsTableauClient">

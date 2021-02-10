@@ -32,10 +32,10 @@ session_start();
         <table class="tableauClient">
             <thead class="titreTableauClient">
                 <tr>
-                    <th>ID</th>
-                    <th>RAISON SOCIALE</th>
-                    <th>TELEPHONE</th>
-                    <th>
+                    <th class="colonneId">ID</th>
+                    <th class="colonneNom">RAISON SOCIALE</th>
+                    <th class="colonneTel">TELEPHONE</th>
+                    <th class="colonneTri">
                         <?php 
                         $order = ""; 
 

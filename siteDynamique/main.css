@@ -843,6 +843,22 @@ input::placeholder {
     cursor: pointer;
 }
 
+.colonneId {
+    width: 5%;
+}
+
+.colonneNom {
+    width: 40%;
+}
+
+.colonneTel {
+    width: 25%;
+}
+
+.colonneTri {
+    width: 25%;
+    background-color: #096A80;
+}
 
 /*liste client*/
 
