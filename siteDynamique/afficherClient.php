@@ -81,6 +81,7 @@ $id = ($_GET['id']);
                 <div class="donneesAffichageClientListes">
                     <p class="infosTxtFixes" id="ancreContact">Contact</p>
                     <select class="listeScroll">
+                    <option selected>Choissisez un contact : </option>
                     <?php
 
                     require 'connexionBDD.php';

@@ -57,18 +57,18 @@ $id = ($_GET['id']);
                     <p class="formCreationContactBloc3">               
                         <label class="labelCreationContactBottom">Photos</label>
                         <input class="formInputCreationContactBloc3" type="text" name="photo">
-                        <input class="buttonCreationContact" type="submit" value="Ajout Photo">
+                        <input class="buttonCreationClient" type="submit" value="Ajout Photo">
                     </p>  
                     <p class="formCreationContactBloc3">    
                         <label class="labelCreationContactBottom">Documents</label>
                         <input class="formInputCreationContactBloc3" type="text" name="document">
-                        <input class="buttonCreationContact" type="submit" value="Ajout Document">
+                        <input class="buttonCreationClient" type="submit" value="Ajout Document">
                     </p>  
                 </div>
                 <div class="flexCreationContact">
-                    <input class="buttonCreationContact" type="submit" value="Annuler">
+                    <input class="buttonCreationClient" type="submit" value="Annuler">
                     <input type="hidden" value="<?php echo $id ?>" name="idClient"/>
-                    <input class="buttonCreationContact" type="submit" value="Valider">
+                    <input class="buttonCreationClient" type="submit" value="Valider">
                 </div>    
             </form>
         </div>
