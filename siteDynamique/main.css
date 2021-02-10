@@ -527,6 +527,7 @@ footer {
     align-items: center;
     color: #E2F4F9;
     font-weight: bold;
+    cursor: pointer;
 }
 
 /* PAGE CREATION CONTACT */

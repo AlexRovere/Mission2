@@ -37,7 +37,7 @@ session_start();
                     <div id="bloc1Creationclient">
                         <p class="pFormCreationClient">    
                             <label>Raison sociale</label> 
-                            <input class="formInputCreationClientBloc1" type="text" name="raisonSociale" required maxlength="32">
+                            <input class="formInputCreationClientBloc1" type="text" name="raisonSociale"  maxlength="32">
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Téléphone</label> 
