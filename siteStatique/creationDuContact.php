@@ -13,7 +13,7 @@
     <div class="miette">
         <a href="indexConnecte.php"><img src="img/home.png" id="logoMiette"></a>
         <a href="mainIntranet.php">  / Accueil Intranet</a>
-        <a href="commercial.php">  / Gestion commerciale </a> / Création client
+        <a href="commercial.php">  / Gestion commerciale </a> / Création contact
     </div>
 
     <h2 class="h2Centre">Création contact</h2>

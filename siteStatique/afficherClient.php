@@ -52,7 +52,7 @@
                     </div>
                 </div>
                 <div class="donneesAffichageClientListes">
-                    <p class="infosTxtFixes">Contact</p>
+                    <p class="infosTxtFixes" id="ancreContact">Contact</p>
                     <select class="listeScroll ">
                         <option value="">1</option>
                         <option value="">2</option>
