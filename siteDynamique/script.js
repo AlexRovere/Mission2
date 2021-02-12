@@ -8,16 +8,6 @@ function hideModal() {
     $modal.classList.replace("modalComponent","hiddenModal"); 
     }
    
-    
-$verifConnexion = document.getElementById('formConnexion');
-$verifConnexion.addEventListener("submit", function(evenement)  {
-    const canSubmit = verifConnexionInputs();
-    if(!canSubmit){
-        evenement.preventDefault();
-        return;
-    }
-});
-
 
 function verifConnexionInputs(){
     $mail = document.getElementById('mailConnexion');

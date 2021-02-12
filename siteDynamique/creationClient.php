@@ -70,11 +70,11 @@ session_start();
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Effectifs</label>
-                            <input class="formInputCreationClientBloc2" type="number" name="effectif" required>
+                            <input class="formInputCreationClientBloc2" type="number" name="effectif">
                         </p>  
                         <p class="pFormCreationClient">    
                             <label>Chiffres d'affaires</label>
-                            <input class="formInputCreationClientBloc2" type="number" step="any" name="CA" required>
+                            <input class="formInputCreationClientBloc2" type="number" step="any" name="CA">
                         </p>
                     </div>
                 </div>
@@ -89,7 +89,7 @@ session_start();
                     </p>   
                 </div>
                 <div class="flexCreationClient">
-                    <input class="buttonCreationClient" type="submit" value="Annuler">
+                    <a href="commercial.php"><div class="buttonCreationClient">Annuler</div></a>
                     <input class="buttonCreationClient" type="submit" value="Valider">
                 </div>    
             </form>

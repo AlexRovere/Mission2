@@ -8,6 +8,7 @@ session_start();
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
     <script src="script.js" async></script>
+    <script src="scriptVerifConnexion.js" async></script>
     <title>Active Bretagne Informatique</title>
 </head>
 <body>

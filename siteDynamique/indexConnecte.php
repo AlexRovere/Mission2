@@ -7,7 +7,6 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="main.css">
-    <script src="script.js"></script>
     <title>Mision 2</title>
 </head>
 <body>

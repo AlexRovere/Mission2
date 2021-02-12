@@ -7,7 +7,6 @@ function supprimerClient(e){
 
 
 let supprimer = document.getElementsByClassName('supprimerClient');
-
-for (let i in supprimer){
-supprimer[i].addEventListener("click", supprimerClient);
+for (let sup of supprimer){
+sup.addEventListener("click", supprimerClient);
 }
