@@ -109,7 +109,7 @@ $id = ($_GET['id']);
                         <span id="formCreationClientFakeButton"><span> 
                         <div class="flexCreationClient">
                             <input class="buttonCreationClient" type="submit" value="Supprimer Contact">
-                            <input class="buttonCreationClient" type="submit" value="Ajout Contact">
+                            <a href="creationDuContact.php?id=<?= $donnees['idClient'];?>"><div class="buttonCreationClient">Ajout contact</div></a>
                         </div>    
                     </p>  
                     <p class="pFormCreationClientBloc3">    

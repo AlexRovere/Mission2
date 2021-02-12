@@ -18,12 +18,14 @@ require 'connexionBDD.php';
     if ($results == true) {
         echo json_encode([
             "success" => true,
+            "idContact" => $idContact,
             "documents" => $results,
         ]);  
     }
     else {
         echo json_encode([
             "success" => false,
+            "idContact" => $idContact,
         ]);
     }
 ?> 
