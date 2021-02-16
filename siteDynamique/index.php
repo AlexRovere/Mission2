@@ -47,7 +47,6 @@ session_start();
                             <input id="btn-login" type="submit" class="boutonModal connexionTxtModal" value="Connexion">
                         </div>
                     </form>
-
                     <script>
                         const $btnLogin = document.getElementById("btn-login");
                         const $mailInput = document.getElementById("mailConnexion");
